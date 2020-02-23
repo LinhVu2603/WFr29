@@ -9,12 +9,12 @@ body{
 }
 #header{
 	widows: 100%;
-	height: 700px;
+	height: 600px;
 	background-image: url(images/homebg.jpg);
 	background-size: cover;
 	padding: 0px !important;
 }
-#bground{
+.bground{
 	width: 100%;
 	height: 100%;
 	background-color: #1a1b1cb3;
@@ -109,6 +109,20 @@ a, a:link, a:active, a:visited, a:hover {
 	text-align: center;
 	font-family: 'Nanum Gothic', sans-serif;
 }
+.tt3{
+	color: black;
+	font-size: 20px;
+	text-align: left;
+	padding-left: 2%;
+	font-family: 'Ubuntu', sans-serif;
+}
+.tt4{
+	color: black;
+	font-size: 14px;
+	text-align: left;
+	font-family: 'Nanum Gothic', sans-serif;
+	padding: 2%;
+}
 .btn1{
 	width: 40%;
 	height: 8%;
@@ -124,23 +138,11 @@ a, a:link, a:active, a:visited, a:hover {
 	margin: 0 auto;
 	position: relative;
 }
-.mySlides{
-	width: 100%;
-	height: 100%;
-	display: none;
-	position: absolute;
-}
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 0 5px;
   background-color: white;
   border-radius: 50%;
   display: inline-block;
@@ -148,4 +150,324 @@ a, a:link, a:active, a:visited, a:hover {
 }
 .active, .dot:hover {
   background-color: #ff7200;
+}
+.flat{
+	width: 100%;
+	height: 45%;
+	float: left;
+	margin-left: 5%;
+}
+.flat img{
+	width: 90%;
+	height: 85%;
+	position: absolute;
+	z-index: 0;
+}
+.conveyor-btn {
+	width: 57%;
+	height: 30px;
+	/*background: red;*/
+	position: absolute;
+	bottom:10%;
+	right: 0px;
+	opacity: 0.8;
+}
+.img-slide {
+	max-width: 100%;
+	min-width: 100%;
+	max-height: 100%;
+	min-height: 100%;
+	/*display: none;*/
+}
+.flat i{
+	z-index: 1;
+	position: absolute;
+	text-align: center;
+	padding-left: 43%;
+	margin-top: 20%;
+}
+.flat div{
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	margin-top: 40%;
+	color: black !important;
+}
+.extra-bar{
+	margin-left: 2%;
+	height: 3px;
+	background-color: #eeeeee;
+	padding: 0px !important;
+}
+.extra-bar div{
+	margin-left: 0px;
+	height: 100%;
+	background-color: #ff7200;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+.dot1 {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot1:hover {
+  background-color: #ff7200;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5000s;
+  animation-name: fade;
+  animation-duration: 50s;
+}
+@-webkit-keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+#btnLaunch{
+	width: 35%;
+	height: 6%;
+	background-color: white;
+	color: black;
+	font-size: 14px;
+	padding-top: 2%;
+	margin-left: 0px;
+	border: solid 2px #eeeeee;
+}
+.flag{
+	height: 85%;
+	float: left;
+	padding: 0px;
+	padding-right: 2%;
+}
+.flag img{
+	width: 90%;
+	height: 100%;
+	position: absolute;
+	z-index: 0;
+}
+.chart{
+	width: 100%;
+	height:20%;
+	float: left;
+	padding-right: 3%;
+}
+.chart>ul>li{
+	list-style: none;
+	display: block;
+	float: left;
+	line-height: 30px;
+}
+.ttleft{
+	float: left;
+	padding-right: 55%;
+}
+.chart1{
+	width: 100%;
+	height: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 2px ;
+	position: relative;
+	top: 30px;
+	padding: 0px;
+}
+.chart2{
+	width: 100%;
+	height: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 2px #eeeeee;
+	position: absolute;
+	top: 0;
+	background-color: #ff7200;
+}
+.Dcount{
+	height: 20%;
+	position: relative;
+	display: block;
+	float: left;
+	z-index: 2;
+}
+.img-div{
+	width: 100%;
+	height: 600px;
+}
+.img-info{
+	width: 50%;
+	height: 50%;
+	background-color:#ff720094;
+	position: absolute;
+	z-index: 1; 
+	margin-left: 22%;
+	margin-top: 25%;
+	display: none;
+
+}
+.icon-hv{
+	width: 20%;
+	height: 16%;
+	border: solid 1px white;
+	display: block;
+	float: left;
+	margin-left: 4%;
+	margin-bottom: 5%;
+	color: white;
+}
+#content {
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.panel {
+	width: 100%;
+	background: white;
+}
+.plus img{
+	position: absolute;
+	z-index: 0;
+	width: 80%;
+	height: 60px;
+}
+.plus i{
+	position: absolute;
+	z-index: 1;
+	padding: 25%;
+}
+.panel-title{
+	width: 100%;
+	height: 58px;
+	border: solid 2px #eeeeee;;
+}
+.panel-content {
+	width: 100%;
+	padding: 5px;
+	border: solid 2px #eeeeee;
+	display: none;
+}
+.ctent1{
+	height: 110px;
+}
+#menu2{
+	position: absolute;
+	margin-top: 5%;
+}
+#menu2>ul>li{
+	list-style: none;
+	display: block;
+	float: left;
+	line-height: 35px;
+}
+#menu2>ul>li p{
+	font-size: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 0px !important;
+	margin-bottom: 0px !important;
+}
+#menu2>ul>li div{
+	width: 100%;
+	height: 3px;
+	padding: 0 !important;
+}
+#menu2>ul>li:hover div{
+	background-color: #ff7200;
+}
+.pictures{
+	padding: 0px !important;
+	margin: 0px !important;
+}
+.pics{
+	padding: 0px !important;
+	margin: 0px !important;
+	margin-bottom: 5%;
+}
+.img-fluid{
+	width: 95%;
+	margin-bottom: 5%;
+/*	position: absolute;
+*/}
+.img-info2{
+	width: 85%;
+	height: 70%;
+	background-color:#ff720094;
+	position: absolute;
+	z-index: 1; 
+	margin-left: 5%;
+	margin-top: 5%;
+	display: none;
+	font-size: 12px;
+}
+.icon-hv2{
+	width: 20%;
+	height: 40%;
+	border: solid 1px white;
+	display: block;
+	float: left;
+	margin-left: 4%;
+	margin-top: 15%;
+	color: white;
+	font-size: 12px;
+	padding-left:5%;
+	padding-top: 2%;
+}
+.gallery .pics {
+	-webkit-transition: all 350ms ease;
+	transition: all 350ms ease; 
+}
+.gallery .animation {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1); 
+}
+.gallery_product{
+	padding: 0px !important;
+}
+#bg11{
+	widows: 100%;
+	height: 100%;
+	background-image: url(images/testbg.jpg);
+	background-size: cover;
+	padding: 0px !important;
+}
+.clogo{
+	float: left;
+}
+.clogo img{
+	width: 80%;
+	height: 80%;
+	margin-top: 10%;
+	margin-left: 10%;
+}
+#bg12{
+	widows: 100%;
+	height: 80%;
+	background-image: url(images/featureslid1.jpg);
+	background-size: cover;
+	padding: 0px !important;
+	margin-top: 15%;
+}
+#bg12 div>input{
+	width: 80%;
+	height: 32px;
+	margin-left: 10%;
+	margin-top: 5%;
+}
+#btnSubmit{
+	width: 35%;
+	height: 7%;
+	background-color: #ff7200;
+	color: white;
+	font-size: 14px;
+	padding-top: 2%;
+	margin-left: 0px;
+	border: solid 2px #ff7200;
+	margin-top: 10%;
+	margin-left: 30%;
 }

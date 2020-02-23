@@ -16,12 +16,16 @@
 	<link type="text/css" rel="stylesheet" href="mmenu-light.css" />
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Ubuntu&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-12" id="header">
-				<div id="bground">
+				<div class="bground">
 					<div id="logo">LOGIC</div>
 					<div id="smenu">
 						<div class="header">
@@ -53,54 +57,625 @@
 							</nav>
 						</div>
 					</div>
-					<div class="slideshow-container">
-						<div class="mySlides fade">
+					<div id="slide-show">
+						<div class="img-slide">
 							<p class="tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;">WELCOME TO OUR LOGIC</p>
 							<p class="tt2" style="text-align: center;">We Make Awesome Theme For Your Bussiness</p>
 							<div class="btn1 btn" style="margin-top: 8%;">LEARN MORE</div>
 						</div>
 
-						<div class="mySlides fade">
-							<p class="tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;">WELCOME TO OUR LOGIC</p>
+						<div class="img-slide">
+							<p class="tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;">ENJOY YOUR EXPERIENCE</p>
+							<p class="tt2" style="text-align: center;">We Make Awesome Theme.</p>
+							<div class="btn1 btn" style="margin-top: 8%;">LEARN MORE</div>
+						</div>
+
+						<div class="img-slide">
+							<p class="tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;">WEUR LOGIC</p>
 							<p class="tt2" style="text-align: center;">We Make Awesome Theme For Your Bussiness</p>
 							<div class="btn1 btn" style="margin-top: 8%;">LEARN MORE</div>
 						</div>
 
-						<div class="mySlides fade">
-							<p class="tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;">WELCOME TO OUR LOGIC</p>
-							<p class="tt2" style="text-align: center;">We Make Awesome Theme For Your Bussiness</p>
-							<div class="btn1 btn" style="margin-top: 8%;">LEARN MORE</div>
-						</div>
-						<div style="padding-top: 100%;padding-left: 42%;  margin-bottom: 5px;">
-							<span class="dot" onclick="currentSlide(1)"></span> 
-							<span class="dot" onclick="currentSlide(2)"></span> 
-							<span class="dot" onclick="currentSlide(3)"></span> 
+						<!-- button -->
+						<div class="conveyor-btn">
+							<button class="dot" onclick="elementSlide(0)"></button>
+							<button class="dot" onclick="elementSlide(1)"></button>
+							<button class="dot" onclick="elementSlide(2)"></button>
 						</div>
 					</div>
-					
 				</div>
 
 			</div>
-			<div class="col-12"></div>
-			<div class="col-12"></div>
-			<div class="col-12"></div>
-			<div class="col-12"></div>
-			<div class="col-12"></div>
-			<div class="col-12"></div>
-			<div class="col-12"></div>
-			<div class="col-12"></div>
-			<div class="col-12"></div>
-			<div class="col-12"></div>
-			<div class="col-12"></div>
-			<div class="col-12"></div>
-			<div class="col-12"></div>
+			<div class="col-12" style="height: 400px; margin-top: 5%;">
+				<div class="col-5 flat">
+					<img src="images/stabmenubg.png" alt="" class="img-flat">
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					<div><p class="tt1" style="	color: black !important;font-size: 14px;">WEB DESIGN</p></div>
+				</div>
+				<div class="col-5 flat">
+					<img src="images/stabmenubg.png" alt="" class="img-flat">
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					<div><p class="tt1" style="	color: black !important;font-size: 14px;">APP DESIGN</p></div>
+				</div>
+				<div class="col-5 flat">
+					<img src="images/stabmenubg.png" alt="" class="img-flat">
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					<div><p class="tt1" style="	color: black !important;font-size: 14px;">GRAPHIC DESIGN</p></div>
+				</div>
+				<div class="col-5 flat">
+					<img src="images/stabmenubg.png" alt="" class="img-flat">
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					<div><p class="tt1" style="	color: black !important;font-size: 14px;">GAME DESIGN</p></div>
+				</div>
+			</div>
+			<div class="col-12" style="height: 600px;">
+				<p class="tt3" style="color: black !important;">WEB DESIGN ONE</p>
+				<div class="extra-bar col-6">
+					<div class="col-3"></div>
+				</div>
+				<p class="tt2" style="color: black; padding-top: 10% !important; text-align: left; padding:2%;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quia nulla ratione officiis nostrum id porro magni animi eligendi pariatur.</p>
+				<div class="btn1 btn" style="margin-top: 8%; margin-left: 0px;">LEARN MORE</div>
+				<img src="images/stab1.png" alt="" style="width: 95%; height: 50%;">
+			</div>
+			<div class="col-12" style="height: 750px;margin-top: 6%;">
+				<p class="tt3" style="color: black !important;">FEATURED WORK</p>
+				<div class="extra-bar col-6">
+					<div class="col-3"></div>
+				</div>
+				<div class="slideshow-container" style="margin-top: 10%;">
+
+					<div class="mySlides fade">
+					  <img src="images/featureslid1.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+					  <img src="images/pf6.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+					  <img src="images/featureslid1.jpg" style="width:100%">
+					</div>
+				</div>
+				<br>
+
+				<div style="text-align:center">
+				  <span class="dot1" onclick="currentSlide(1)"></span> 
+				  <span class="dot1" onclick="currentSlide(2)"></span> 
+				  <span class="dot1" onclick="currentSlide(3)"></span> 
+				</div>
+				<p class="tt3" style="font-size: 14px; padding-top: 10%;">HAND WITH A WATCH</p>
+				<p class="tt2" style="color: black; padding-top: 5% !important; text-align: left; padding:2%;">Able content of a page when looking at its layout. The point of using Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quia nulla ratione officiis nostrum id porro magni animi eligendi pariatur.</p>
+				<p class="tt4" style="padding-bottom: 0px !important;"><b>Client:</b> Dadit Lorm</p>
+				<p class="tt4" style="padding-top: 0px !important;padding-bottom: 0px !important;"><b>Deivered:</b> Sunday,15 August, 2015</p>
+				<p class="tt4" style="padding-top: 0px !important;"><b>Tags:</b> Hand, watch, black, Tree.</p>
+				<div class="btn2 btn" id="btnLaunch">LAUNCH MORE</div>
+			</div>
+			<div class="col-12" style="height: 600px;margin-top: 20%; padding: 0px !important;">
+				<div class="bground" style="position: absolute;z-index: 1;">
+				</div>
+				<img src="images/1.jpg" alt="" style="width: 100%; height: 100%;position: absolute;z-index: 0;">
+				<p style="position: absolute; color: white; font-size: 48px; z-index: 2;padding-left: 45%;padding-top: 45%;"><i class="fa fa-play" aria-hidden="true"></i></p>
+				<p style="position: absolute; color: white; font-size: 24px; z-index: 2;text-align: center !important;padding-top: 65%;padding-left: 30%;">WATCH OUR INTRO</p>
+			</div>
+			<div class="col-12" style="height: 1250px;margin-top: 10%;">
+				<p class="tt3" style="color: black !important;">ABOUT LOGIC</p>
+				<div class="extra-bar col-6">
+					<div class="col-3"></div>
+				</div>
+				<div class="col-12 ctent1" style="margin-top: 10%;">
+					<div class="col-4">
+						<img class="col4-img" src="images/iconbg1.png" alt="" style="position: absolute;width: 110px;height: 100px;">
+						<i class="fa fa-coffee" aria-hidden="true" style="position: absolute;font-size: 28px;padding:20%;"></i>
+					</div>
+					<div class="col-8" style="float: right;padding: 0px;">
+						<p class="tt3" style="color: black !important;margin-bottom: 0px;">RESPONSIVE DESIGN</p>
+						<p class="tt2" style="color: black; text-align: left; padding:2%;">Able content of a page when looking at its layout. The point of using Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div>
+				<div class="col-12 ctent1" style="margin-top: 8%;float: left;z-index: 1;">
+					<div class="col-4">
+						<img class="col4-img" src="images/iconbg1.png" alt="" style="position: absolute;width: 110px;height: 100px;">
+						<i class="fa fa-scissors" aria-hidden="true" style="position: absolute;font-size: 28px;padding:20%;"></i>
+					</div>
+					<div class="col-8" style="float: right;padding: 0px;">
+						<p class="tt3" style="color: black !important;margin-bottom: 0px;">EASY TO CUSTOMIZE</p>
+						<p class="tt2" style="color: black; text-align: left; padding:2%;">Able con Lorem ipsum dolor sit.lor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div>
+				<div class="col-12 ctent1" style="margin-top: 8%;float: left;z-index: 1;">
+					<div class="col-4">
+						<img class="col4-img" src="images/iconbg1.png" alt="" style="position: absolute;width: 110px;height: 100px;">
+						<i class="fa fa-headphones" aria-hidden="true" style="position: absolute;font-size: 28px;padding:20%;"></i>
+					</div>
+					<div class="col-8" style="float: right;padding: 0px;">
+						<p class="tt3" style="color: black !important;margin-bottom: 0px;">LIFE TIME SUPPORT</p>
+						<p class="tt2" style="color: black; text-align: left; padding:2%;">Lorem ipsum dolor sit.ng at its layout. The point of using Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div>
+				<div class="col-12" style="z-index: 0;"><img src="images/abright.png" alt="" style="width: 90%; height: 95%; margin-top: 5%;margin-left: 5%;"></div>
+			</div>
+			<div class="col-12" style="height: 100px;margin-top: 5%;">
+				<div class="col-3 flag" >
+					<img class ="flag" src="images/skmenubg.png" alt="">
+					<p class="tt4" style="position: absolute;font-size: 12px;padding-top: 15%;padding-left: 10%;">OUR MISSION</p>
+				</div>
+				<div class="col-3 flag">
+					<img class="flag" src="images/skmenubg.png" alt="">
+					<p class="tt4" style="position: absolute;font-size: 12px;padding-top: 15%;padding-left: 20%;">OUR GOAL</p>
+				</div>
+				<div class="col-3 flag">
+					<img class="flag" src="images/skmenubg.png" alt="">
+					<p class="tt4" style="position: absolute;font-size: 12px;padding-top: 15%;padding-left: 10%;">ACHIEVEMENTS</p>
+				</div>
+			</div>
+			<div class="col-12" style="height: 400px;">
+				<p class="tt2" style="color: black; padding-top: 10% !important; text-align: left; padding:2%;float: none;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quia nulla ratione officiis nostrum id porro magni animi eligendi pariatur.</p>
+				<p class="tt2" style="color: black;text-align: left; padding:2%;float: none;margin:0px !important;"><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp&nbsp We just want to love our client.</p>
+				<p class="tt2" style="color: black;text-align: left; padding:2%;float: none;margin:0px !important;"><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp&nbsp We just want to love our client.</p>
+				<p class="tt2" style="color: black;text-align: left; padding:2%;float: none;margin:0px !important;"><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp&nbsp We just want to love our client.</p>
+				<p class="tt2" style="color: black;text-align: left; padding:2%;float: none;margin:0px !important;"><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp&nbsp We just want to love our client.</p>
+			</div>
+			<div class="col-12" style="height: 400px;">
+				<div class="col-12 chart">
+					<ul>
+						<li class="ttleft tt3">PHOTOSHOP</li>
+						<li class="ttright tt3">79%</li>
+					</ul>
+					<div class="col-12 chart1">
+						<div class="chart2" style="width: 79% !important;"></div>
+					</div>
+				</div>
+				<div class="col-12 chart" style="float: left;">
+					<ul>
+						<li class="ttleft tt3">HTML/CSS</li>
+						<li class="ttright tt3">90%</li>
+					</ul>
+					<div class="col-12 chart1">
+						<div class="chart2" style="width: 90% !important;"></div>
+					</div>
+				</div>
+				<div class="col-12 chart" style="float: left;">
+					<ul>
+						<li class="ttleft tt3">JAVASCRIPT</li>
+						<li class="ttright tt3">69%</li>
+					</ul>
+					<div class="col-12 chart1">
+						<div class="chart2" style="width: 69% !important;"></div>
+					</div>
+				</div>
+				<div class="col-12 chart" style="float: left;">
+					<ul>
+						<li class="ttleft tt3">WORDPRESS</li>
+						<li class="ttright tt3">92%</li>
+					</ul>
+					<div class="col-12 chart1">
+						<div class="chart2" style="width: 92% !important;"></div>
+					</div>
+				</div>
+			
+			</div>
+			<div class="col-12" style="height: 900px;padding: 0px;">
+				<div class="bground" style="position: absolute;z-index: 1;">
+				</div>
+				<img src="images/3.jpg" alt="" style="width: 100%;height: 100%;position: absolute;z-index: 0;">
+				<div class="col-12 Dcount stat-items" style="margin-top: 10%;height: 25% !important;">
+					<p class="tt1 counter" style="padding-top: 10%;margin-bottom: 0px;">561</p>
+					<p class="tt1" style="color:#ff7200; "><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></p>
+					<p class="tt2">CREATIVE DESIGN</p>
+				</div>
+				<div class="col-12 Dcount stat-items">
+					<p class="tt1 counter" style="margin-bottom: 0px;">25</p>
+					<p class="tt1" style="color:#ff7200; "><i class="fa fa-trophy" aria-hidden="true"></i></p>
+					<p class="tt2">AWARDS WON</p>
+				</div>
+				<div class="col-12 Dcount stat-items">
+					<p class="tt1 counter" style="margin-bottom: 0px;">236</p>
+					<p class="tt1" style="color:#ff7200; "><i class="fa fa-users" aria-hidden="true"></i></p>
+					<p class="tt2">HAPPY CLIENTS</p>
+				</div>
+				<div class="col-12 Dcount stat-items">
+					<p class="tt1 counter" style="margin-bottom: 0px;">365</p>
+					<p class="tt1" style="color:#ff7200; "><i class="fa fa-coffee" aria-hidden="true"></i></p>
+					<p class="tt2">CUP OF COFFEE</p>
+				</div>
+			</div>
+			<div class="col-12" style="height: 1000px;margin-top: 5%;">
+				<p class="tt3" style="color: black !important;">THEIR SERVICES</p>
+				<div class="extra-bar col-6">
+					<div class="col-3"></div>
+				</div>
+				<div class="col-12=" style="margin-top: 10%;">
+					<div class="col-3" style="height: 70px;float: left;">
+						<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
+						<i class="fa fa-clock-o" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
+					</div>
+					<div class="col-9" style="float: right;padding: 0px;">
+						<p class="tt3" style="font-size: 18px;margin-top: 5%;">CREATIVE DESIGN</p>
+					</div>
+				</div>
+				<p class="tt2" style="color: black; text-align: left; padding:2%;margin-top: 25%;position: relative;">The point of using Lorem ipsum dolor sit amet, consectetur elit.</p>
+				<div class="col-12=" style="margin-top: 10%;">
+					<div class="col-3" style="height: 70px;float: left;">
+						<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
+						<i class="fa fa-picture-o" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
+					</div>
+					<div class="col-9" style="float: right;padding: 0px;">
+						<p class="tt3" style="font-size: 18px;margin-top: 5%;">WEB DEVELOPEMENT</p>
+					</div>
+				</div>
+				<p class="tt2" style="color: black; text-align: left; padding:2%;margin-top: 25%;position: relative;">Point of using Lorem ipsum dolor sit amet, consectetur elit.</p>
+				<div class="col-12=" style="margin-top: 10%;">
+					<div class="col-3" style="height: 70px;float: left;">
+						<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
+						<i class="fa fa-television" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
+					</div>
+					<div class="col-9" style="float: right;padding: 0px;">
+						<p class="tt3" style="font-size: 18px;margin-top: 5%;">VIDEO EDITING</p>
+					</div>
+				</div>
+				<p class="tt2" style="color: black; text-align: left; padding:2%;margin-top: 25%;position: relative;">Torem ipsum dolor sit amet, consectetur elit.</p>
+				<div class="col-12=" style="margin-top: 10%;">
+					<div class="col-3" style="height: 70px;float: left;">
+						<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
+						<i class="fa fa-connectdevelop" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
+					</div>
+					<div class="col-9" style="float: right;padding: 0px;">
+						<p class="tt3" style="font-size: 18px;margin-top: 5%;">MARKETING</p>
+					</div>
+				</div>
+				<p class="tt2" style="color: black; text-align: left; padding:2%;margin-top: 25%;position: relative;">Tf using Lorem ipsum dolor sit amet, consectetur elit.</p>
+				<div class="col-12=" style="margin-top: 10%;">
+					<div class="col-3" style="height: 70px;float: left;">
+						<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
+						<i class="fa fa-camera-retro" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
+					</div>
+					<div class="col-9" style="float: right;padding: 0px;">
+						<p class="tt3" style="font-size: 18px;margin-top: 5%;">PHOTOGRAPHY</p>
+					</div>
+				</div>
+				<p class="tt2" style="color: black; text-align: left; padding:2%;margin-top: 25%;position: relative;">Lorem ipsum.t of using Lorem ipsum dolor sit amet, consectetur elit.</p>
+				<div class="col-12=" style="margin-top: 10%;">
+					<div class="col-3" style="height: 70px;float: left;">
+						<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
+						<i class="fa fa-snowflake-o" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
+					</div>
+					<div class="col-9" style="float: right;padding: 0px;">
+						<p class="tt3" style="font-size: 18px;margin-top: 5%;">LOGO DESIGN</p>
+					</div>
+				</div>
+				<p class="tt2" style="color: black; text-align: left; padding:2%;margin-top: 25%;position: relative;">Using Lorem ipsum dolor sit amet, consectetur elit.</p>
+			</div>
+			<div class="col-12" style="height:2550px;margin-top: 20%;">
+				<p class="tt3" style="color: black !important;">THEIR SERVICES</p>
+				<div class="extra-bar col-6">
+					<div class="col-3"></div>
+				</div>
+				<div class="col-12 img-div" style="margin-top: 17%;">
+					<img src="images/team1.jpg" alt="" style="width: 92%;z-index: 0;position: absolute;">
+					<div class="img-info">
+						<p class="tt3" style="color: white;padding-top: 15%;padding-left: 15%;margin-bottom: 0px;">SEMF UCUK</p>
+						<p class="tt4" style="padding-left: 15%;color: white;margin-bottom: 35%;">FOUNDER</p>
+						<div class="icon-hv"><i class="fa fa-facebook" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
+						<div class="icon-hv"><i class="fa fa-twitter" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
+						<div class="icon-hv"><i class="fa fa-google-plus" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
+						<div class="icon-hv"><i class="fa fa-pinterest-p" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
+					</div>
+				</div>
+				<div class="col-12 img-div">
+					<img src="images/team2.jpg" alt="" style="width: 92%;z-index: 0;position: absolute;">
+					<div class="img-info">
+						<p class="tt3" style="color: white;padding-top: 15%;padding-left: 15%;margin-bottom: 0px;">DICK ADALIN</p>
+						<p class="tt4" style="padding-left: 15%;color: white;margin-bottom: 35%;">ENGINEERING</p>
+						<div class="icon-hv"><i class="fa fa-facebook" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
+						<div class="icon-hv"><i class="fa fa-twitter" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
+						<div class="icon-hv"><i class="fa fa-google-plus" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
+						<div class="icon-hv"><i class="fa fa-pinterest-p" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
+					</div>
+				</div>
+				<div class="col-12 img-div">
+					<img src="images/team3.jpg" alt="" style="width: 92%;z-index: 0;position: absolute;">
+					<div class="img-info">
+						<p class="tt3" style="color: white;padding-top: 15%;padding-left: 15%;margin-bottom: 0px;">SAM SMITH</p>
+						<p class="tt4" style="padding-left: 15%;color: white;margin-bottom: 35%;">MANAGER</p>
+						<div class="icon-hv"><i class="fa fa-facebook" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
+						<div class="icon-hv"><i class="fa fa-twitter" aria-hidden="true" style="color: white;padding: 30%;"></i></div>	
+						<div class="icon-hv"><i class="fa fa-google-plus" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
+						<div class="icon-hv"><i class="fa fa-pinterest-p" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
+					</div>
+				</div>
+				<div class="col-12 img-div" >
+					<img src="images/team4.jpg" alt="" style="width: 92%;z-index: 0;position: absolute;">
+					<div class="img-info">
+						<p class="tt3" style="color: white;padding-top: 15%;padding-left: 15%;margin-bottom: 0px;">ALISA SMEL</p>
+						<p class="tt4" style="padding-left: 15%;color: white;margin-bottom: 35%;">ACCOUNTANT</p>
+						<div class="icon-hv"><i class="fa fa-facebook" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
+						<div class="icon-hv"><i class="fa fa-twitter" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
+						<div class="icon-hv"><i class="fa fa-google-plus" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
+						<div class="icon-hv"><i class="fa fa-pinterest-p" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12" style="height: 1300px;">
+				<p class="tt3" style="color: black !important;">WHY CHOOSE US</p>
+				<div class="extra-bar col-6">
+					<div class="col-3"></div>
+				</div>
+				<div id="content col-12">
+					<div class="panel" style="	margin-top: 15%;">
+						<div class="panel-title" data-toggle="collapse" href="#pc1">
+							<div class="plus col-2" style="float: left;padding-left: 0px;"><img src="images/ch_col_icn.png" alt=""><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+							<p class="tt3 col-10" style="float: right;font-size: 18px;padding-top: 3%;">GREAT DESIGN</p>
+						</div>
+						<div class="panel-content" id="pc1" class="collapsed">
+							<p class="tt2" style="color: black; " id="pc1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere aperiam atque expedita eaque, quaerat incidunt nulla, eius provident aliquam natus.</p>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-title" data-toggle="collapse" href="#pc2">
+							<div class="plus col-2" style="float: left;padding-left: 0px;"><img src="images/ch_col_icn.png" alt=""><i class="fa fa-sitemap" aria-hidden="true"></i></div>
+							<p class="tt3 col-10" style="float: right;font-size: 18px;padding-top: 3%;">RESPONSIVE DESIGN</p>
+						</div>
+						<div class="panel-content" id="pc2" class="collapse">
+							<p class="tt2" style="color: black; ">Ipsum dolor sit amet, consectetur adipisicing elit. Facere aperiam atque expedita eaque,Lorem ipsum dolor. quaerat incidunt nulla, eius provident aliquam natus.</p>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-title" data-toggle="collapse" href="#pc3">
+							<div class="plus col-2" style="float: left;padding-left: 0px;"><img src="images/ch_col_icn.png" alt=""><i class="fa fa-certificate" aria-hidden="true"></i></div>
+							<p class="tt3 col-10" style="float: right;font-size: 18px;padding-top: 3%;">RATINA READY</p>
+						</div>
+						<div class="panel-content" id="pc3" class="collapse">
+							<p class="tt2" style="color: black; ">Kolor sit amet, consectetur adipisicing elit. Facere aperiam atque expedita eaque, quaerat incidunt nulla, eius provident aliquam natus.</p>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-title" data-toggle="collapse" href="#pc4">
+							<div class="plus col-2" style="float: left;padding-left: 0px;"><img src="images/ch_col_icn.png" alt=""><i class="fa fa-umbrella" aria-hidden="true"></i></div>
+							<p class="tt3 col-10" style="float: right;font-size: 18px;padding-top: 3%;">FREE GOOGLE FONT</p>
+						</div>
+						<div class="panel-content" id="pc4" class="collapse">
+							<p class="tt2" style="color: black;">Hpsum dolor sit amet, consectetur adipisicing elit. Facere aperiam atqu Lorem ipsum dolor sit.e expedita eaque, quaerat incidunt nulla, eius provident aliquam natus.</p>
+						</div>
+					</div>
+					<div class="panel" style="margin-bottom: 15%;">
+						<div class="panel-title" data-toggle="collapse" href="#pc5">
+							<div class="plus col-2" style="float: left;padding-left: 0px;"><img src="images/ch_col_icn.png" alt=""><i class="fa fa-bus" aria-hidden="true"></i></div>
+							<p class="tt3 col-10" style="float: right;font-size: 18px;padding-top: 3%;">1170 PX GRID BASE</p>
+						</div>
+						<div class="panel-content" id="pc5" class="collapse">
+							<p class="tt2" style="color: black;">Korem ipsum dolor sit amet, consectetur adipisicing elit. Facere aperiam atque expedita eaque, quaerat incidunt nulla, eius provident aliquam natus.</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<img src="images/choose.png" alt="">
+				</div>
+			</div>
+			<div class="col-12" style="height: 1000px;padding: 0px !important;	">
+				<p class="tt3" style="color: black !important;text-align: center;">LATEST PROJECT</p>
+				<div class="extra-bar col-6" style="margin-left: 25%;">
+					<div class="col-3"></div>
+				</div>
+				<div class="col-12" id="menu2" >
+					<ul>
+						<div></div>
+						<li><p href="" class="tt4 btn filter-button" data-filter="all">SHOW ALL</p>
+							<div></div>
+						</li>
+						<li><p href="" class="tt4 btn filter-button" data-filter="photo">PHOTOGRAPHY</p>
+							<div></div>
+						</li>
+						<li><p href="" class="tt4 btn filter-button" data-filter="brand">BRANDING</p>
+							<div></div>
+						</li>
+						<li><p href="" class="tt4 btn filter-button" data-filter="graph">GRAPHIC DESIGN</p>
+							<div></div>
+						</li>
+					</ul>
+				</div>
+				<div class="gallery" id="gallery" style="margin-top: 20%;">
+					<div class="col-4 pictures" style="float: left;">
+						<div class="col-12 gallery_product filter photo">
+							<div class="img-info2">
+								<div class="icon-hv2" style="margin-left:25%;"><i class="fa fa-creative-commons" aria-hidden="true"></i></div>
+								<div class="icon-hv2"><i class="fa fa-search" aria-hidden="true"></i></div>
+							</div>
+							<img class="img-fluid" src="images/pf1.jpg" alt="Card image cap">
+						</div>
+						<div class="col-12 gallery_product filter brand">
+							<div class="img-info2" style="height: 85%;">
+								<div class="icon-hv2" style="margin-left:25%;margin-top: 45%;height: 18%;padding-top: 2%;  "><i class="fa fa-creative-commons" aria-hidden="true"></i></div>
+								<div class="icon-hv2" style="margin-top: 45%;height: 18%; "><i class="fa fa-search" aria-hidden="true"></i></div>
+							</div>
+							<img class="img-fluid" src="images/pf2.jpg" alt="Card image cap">
+						</div>
+						<div class="col-12 gallery_product filter brand">
+							<div class="img-info2" style="height: 85%;">
+								<div class="icon-hv2" style="width: 20%;height: 18%;margin-left:25%;margin-top: 45%;"><i class="fa fa-creative-commons" aria-hidden="true"></i></div>
+								<div class="icon-hv2" style="width: 20%;height: 18%;margin-top: 45%; "><i class="fa fa-search" aria-hidden="true"></i></div>
+							</div>
+							<img class="img-fluid" src="images/pf3.jpg" alt="Card image cap">
+						</div>
+						<div class="col-12 gallery_product filter photo">
+							<div class="img-info2" style="height: 85%;">
+								<div class="icon-hv2" style="width: 20%;height: 18%;margin-left:25%;margin-top: 45%;"><i class="fa fa-creative-commons" aria-hidden="true"></i></div>
+								<div class="icon-hv2" style="width: 20%;height: 18%;margin-top: 45%; "><i class="fa fa-search" aria-hidden="true"></i></div>
+							</div>
+							<img class="img-fluid" src="images/pf4.jpg" alt="Card image cap">
+						</div>
+					</div>
+					<div class="col-4 pictures" style="float: left;">
+						<div class="col-12 gallery_product filter photo">
+							<div class="img-info2" style="height: 85%;">
+								<div class="icon-hv2" style="width: 20%;height: 18%;margin-left:25%;margin-top: 45%;"><i class="fa fa-creative-commons" aria-hidden="true"></i></div>
+								<div class="icon-hv2" style="width: 20%;height: 18%;margin-top: 45%; "><i class="fa fa-search" aria-hidden="true"></i></div>
+							</div>
+							<img class="img-fluid" src="images/pf8.jpg" alt="Card image cap">
+						</div>
+						<div class="col-12 gallery_product filter brand">
+							<div class="img-info2" style="height: 85%;">
+								<div class="icon-hv2" style="width: 20%;height: 18%;margin-left:25%;margin-top: 45%;"><i class="fa fa-creative-commons" aria-hidden="true"></i></div>
+								<div class="icon-hv2" style="width: 20%;height: 18%;margin-top: 45%; "><i class="fa fa-search" aria-hidden="true"></i></div>
+							</div>
+							<img class="img-fluid" src="images/pf9.jpg" alt="Card image cap">
+						</div>
+						<div class="col-12 gallery_product filter graph">
+							<div class="img-info2" style="height: 93%;">
+								<div class="icon-hv2" style="width: 20%;height: 8%;margin-left:25%;margin-top: 95%;"><i class="fa fa-creative-commons" aria-hidden="true"></i></div>
+								<div class="icon-hv2" style="width: 20%;height: 8%;margin-top: 95%; "><i class="fa fa-search" aria-hidden="true"></i></div>
+							</div>
+							<img class="img-fluid" src="images/pf5.jpg" alt="Card image cap">
+						</div>
+					</div>
+					<div class="col-4 pictures" style="float: right;">
+						<div class="col-12 gallery_product filter graph">
+							<div class="img-info2">
+								<div class="icon-hv2" style="margin-left:25%;"><i class="fa fa-creative-commons" aria-hidden="true"></i></div>
+								<div class="icon-hv2"><i class="fa fa-search" aria-hidden="true"></i></div>
+							</div>
+							<img class="img-fluid" src="images/pf6.jpg" alt="Card image cap">
+						</div>
+						<div class="col-12 gallery_product filter brand">
+							<div class="img-info2" style="height: 85%;">
+								<div class="icon-hv2" style="width: 20%;height: 18%;margin-left:25%;margin-top: 45%;"><i class="fa fa-creative-commons" aria-hidden="true"></i></div>
+								<div class="icon-hv2" style="width: 20%;height: 18%;margin-top: 45%; "><i class="fa fa-search" aria-hidden="true"></i></div>
+							</div>
+							<img class="img-fluid" src="images/pf7.jpg" alt="Card image cap">
+						</div>
+						<div class="col-12 gallery_product filter graph">
+							<div class="img-info2">
+								<div class="icon-hv2" style="margin-left:25%;"><i class="fa fa-creative-commons" aria-hidden="true"></i></div>
+								<div class="icon-hv2"><i class="fa fa-search" aria-hidden="true"></i></div>
+							</div>
+							<img class="img-fluid" src="images/pf6.jpg" alt="Card image cap">
+						</div>
+						<div class="col-12 gallery_product filter brand">
+							<div class="img-info2" style="height: 85%;">
+								<div class="icon-hv2" style="width: 20%;height: 18%;margin-left:25%;margin-top: 45%;"><i class="fa fa-creative-commons" aria-hidden="true"></i></div>
+								<div class="icon-hv2" style="width: 20%;height: 18%;margin-top: 45%; "><i class="fa fa-search" aria-hidden="true"></i></div>
+							</div>
+							<img class="img-fluid" src="images/pf7.jpg" alt="Card image cap">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12" style="height: 600px;" id="bg11">
+				<div class="bground">
+					<div id="slide-show">
+						<div class="img-slide">
+							<p class="tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;"><i class="fa fa-quote-left" aria-hidden="true"></i></p>
+							<p class="tt2" style="text-align: center; padding: 5%;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, maxime.nsectetur adipisicing elit. Mollitia, corrupti, et! Facere iste, nisi eum cumque. Illum eveniet at minima.</p>
+							<p class="tt3" style="color: white;text-align: center;"><b>GRAPH GALADRIEL</b>&nbsp -- MANAGER TENGKUREP</p>
+						</div>
+						<div class="img-slide">
+							<p class="tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;"><i class="fa fa-quote-left" aria-hidden="true"></i></p>
+							<p class="tt2" style="text-align: center; padding: 5%;">There are many variations of passages of Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, corrupti, et! Facere iste, nisi eum cumque. Illum eveniet at minima.</p>
+							<p class="tt3" style="color: white;text-align: center;"><b>JANE GALADRIEL</b>&nbsp -- CEO TENGKUREP</p>
+						</div>
+						<div class="img-slide">
+							<p class="tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;"><i class="fa fa-quote-left" aria-hidden="true"></i></p>
+							<p class="tt2" style="text-align: center; padding: 5%;">Koran Lorem ipsum dolor sit. consectetur adipisicing elit. Mollitia, corrupti, et! Facere iste, nisi eum cumque. Illum eveniet at minima.</p>
+							<p class="tt3" style="color: white;text-align: center;"><b>JANE DANIEL</b>&nbsp -- ASSISTANT TENGKUREP</p>
+						</div>
+
+						<!-- button -->
+						<div class="conveyor-btn">
+							<button class="dot" onclick="elementSlide(3)"></button>
+							<button class="dot" onclick="elementSlide(4)"></button>
+							<button class="dot" onclick="elementSlide(5)"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12" style="height: 600px;background-color: #e6e6e6;">
+				<div class="col-6 clogo" style="margin-top: 15%;"><img src="images/clogo1.png" alt=""></div>
+				<div class="col-6 clogo"  style="margin-top: 15%;"><img src="images/clogo2.png" alt=""></div>
+				<div class="col-6 clogo"><img src="images/clogo3.png" alt=""></div>
+				<div class="col-6 clogo"><img src="images/clogo4.png" alt=""></div>
+				<div class="col-6 clogo"><img src="images/clogo5.png" alt=""></div>
+				<div class="col-6 clogo"><img src="images/clogo9.png" alt=""></div>
+			</div>
+			<div class="col-12" style="height: 600px; margin-top: 6%;">
+				<p class="tt3" style="color: black !important;">CONTACT INFO</p>
+				<div class="extra-bar col-6">
+					<div class="col-3"></div>
+				</div>
+				<div class="col-12 ctent1" style="margin-top: 15%;">
+					<div class="col-4">
+						<img class="col4-img" src="images/info_iconbg.png" alt="" style="position: absolute;width: 70px;height: 70px;">
+						<i class="fa fa-home" aria-hidden="true" style="position: absolute;font-size: 20px;padding:15%;"></i>
+					</div>
+					<div class="col-8" style="float: right;padding: 0px;">
+						<p class="tt3" style="color: black !important;margin-bottom: 0px;">VISIT US</p>
+						<p class="tt2" style="color: black; text-align: left; padding:2%;">20.2 Elizabeth ST.Melbourne, Victoria 3000</p>
+					</div>
+				</div>
+				<div class="col-12 ctent1">
+					<div class="col-4">
+						<img class="col4-img" src="images/info_iconbg.png" alt="" style="position: absolute;width: 70px;height: 70px;">
+						<i class="fa fa-envelope-o" aria-hidden="true" style="position: absolute;font-size: 20px;padding:15%;"></i>
+					</div>
+					<div class="col-8" style="float: right;padding: 0px;">
+						<p class="tt3" style="color: black !important;margin-bottom: 0px;">MAIL US</p>
+						<p class="tt2" style="color: black; text-align: left; padding:2%;">Support@yourmail.com</p>
+					</div>
+				</div>
+				<div class="col-12 ctent1">
+					<div class="col-4">
+						<img class="col4-img" src="images/info_iconbg.png" alt="" style="position: absolute;width: 70px;height: 70px;">
+						<i class="fa fa-mobile" aria-hidden="true" style="position: absolute;font-size: 20px;padding:15%;"></i>
+					</div>
+					<div class="col-8" style="float: right;padding: 0px;">
+						<p class="tt3" style="color: black !important;margin-bottom: 0px;">CALL US</p>
+						<p class="tt2" style="color: black; text-align: left; padding:2%;">+(100) 123 4567 890</p>
+					</div>
+				</div>
+				<div class="col-12 ctent1">
+					<div class="col-4">
+						<img class="col4-img" src="images/info_iconbg.png" alt="" style="position: absolute;width: 70px;height: 70px;">
+						<i class="fa fa-clock-o" aria-hidden="true" style="position: absolute;font-size: 20px;padding:15%;"></i>
+					</div>
+					<div class="col-8" style="float: right;padding: 0px;">
+						<p class="tt3" style="color: black !important;margin-bottom: 0px;">WORK HOUR</p>
+						<p class="tt2" style="color: black; text-align: left; padding:2%;">Mon - Sat 08 Am - 17 Pm</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12" style="height: 800px;">
+				<p class="tt3" style="color: black !important;">CONTACT INFO</p>
+				<div class="extra-bar col-6">
+					<div class="col-3"></div>
+				</div>
+				<div  id="bg12" class="col-12">
+					<div>
+						<input type="text" style="margin-top: 15%;" placeholder="First Name" id="firstName">
+						<i class="error fa fa-exclamation-circle" aria-hidden="true" style="color: #ff7200;display: none;padding-top: 5%;padding-left: 5%;"></i>
+					</div>
+					<div>
+						<input type="text" placeholder="Last Name" id="lastName">
+						<i class="error fa fa-exclamation-circle" aria-hidden="true" style="color: #ff7200;display: none;padding-top: 5%;padding-left: 5%;"></i>
+					</div>
+					<div>
+						<input type="text" placeholder="Email" id="email">
+						<i class="error fa fa-exclamation-circle" aria-hidden="true" style="color: #ff7200;display: none;padding-top: 5%;padding-left: 5%;"></i>
+					</div>
+					<div>
+						<input type="text" placeholder="Subject" id="subject">
+						<i id="checkEmail" class="error fa fa-exclamation-circle" aria-hidden="true" style="color: #ff7200;display: none;padding-top: 5%;padding-left: 5%;"></i>
+					</div>
+					<div>
+						<input type="textarea" style="height: 120px;" placeholder="Message" id="note">
+					</div>
+					<div class="btn2 btn" id="btnSubmit">Submit</div>
+				</div>	
+			</div>
 			<div class="col-12"></div>
 		</div>
 	</div>
 
 
 	<script src="mmenu-light.js"></script>
-	<script>
+	<script type="text/javascript">
 		var menu = new MmenuLight(
 			document.querySelector( '#menu' ),
 			'all'
@@ -123,8 +698,56 @@
 				evnt.preventDefault();
 				drawer.open();
 			});
-	</script>
-	<script>
+
+		window.onload = function(){
+			var imgSlide 	= document.getElementsByClassName("img-slide");
+			var numbSide = 0;
+
+			amimationSlide();
+			// end button
+
+			function amimationSlide() {
+				for(var i = 0; i < imgSlide.length; i++) {
+					imgSlide[i].style.display="none";
+				}
+
+				numbSide++;
+				if(numbSide < 0) {
+					numbSide = imgSlide.length - 1;
+				}
+				if(numbSide > imgSlide.length) {
+					numbSide = 1;
+				}
+
+				imgSlide[numbSide-1].style.display="block";
+
+				// setTimeout(amimationSlide, 5000);
+			}
+
+			function showSlide() {
+				for(var i = 0; i < imgSlide.length; i++) {
+					imgSlide[i].style.display="none";
+				}
+
+				if(numbSide < 1) {
+					numbSide = imgSlide.length;
+				}
+				if(numbSide > imgSlide.length) {
+					numbSide = 1;
+				}
+
+				imgSlide[numbSide-1].style.display="block";
+			}
+		}
+
+		function elementSlide(n) {
+			for(var i = 0; i < document.getElementsByClassName("img-slide").length; i++) {
+				document.getElementsByClassName("img-slide")[i].style.display="none";
+			}
+			document.getElementsByClassName("img-slide")[n].style.display="block";
+		}
+
+		//slide2
 		var slideIndex = 1;
 		showSlides(slideIndex);
 
@@ -137,20 +760,239 @@
 		}
 
 		function showSlides(n) {
-		var i;
-		var slides = document.getElementsByClassName("mySlides");
-		var dots = document.getElementsByClassName("dot");
-		if (n > slides.length) {slideIndex = 1}    
-		if (n < 1) {slideIndex = slides.length}
-		for (i = 0; i < slides.length; i++) {
-		    slides[i].style.display = "none";  
-		}
-		for (i = 0; i < dots.length; i++) {
-		    dots[i].className = dots[i].className.replace(" active", "");
-		}
-	    slides[slideIndex-1].style.display = "block";  
-	    dots[slideIndex-1].className += " active";
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot1");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
 		}
 	</script>
+	<script>
+		$('.img-flat').each(function(index,value){
+				$('.img-flat').eq(index).parent().mouseover(function(){
+				$('.img-flat').eq(index).attr("src","images/stabmenubghv.png");
+				$('.img-flat').eq(index).next().css("color","white");
+				$('.img-flat').eq(index).next().next().children().css("color","white");
+
+			})
+			$('.img-flat').eq(index).parent().mouseout(function(){
+				$('.img-flat').eq(index).attr("src","images/stabmenubg.png");
+				$('.img-flat').eq(index).next().css("color","black");
+				$('.img-flat').eq(index).next().next().children().css("color","black");
+			})
+		})
+
+		//flag
+		$('.flag').each(function(index,value){
+			$('.flag').eq(index).parent().mouseover(function(){
+				$('.flag').eq(index).attr("src","images/skmenubgh.png");
+				$('.flag').eq(index).next().css("color","white");
+			})
+			$('.flag').eq(index).parent().mouseout(function(){
+				$('.flag').eq(index).attr("src","images/skmenubg.png");
+				$('.flag').eq(index).next().css("color","black");
+			})
+		});
+
+		//col4-img
+		$('.col4-img').each(function(index,value){
+			$('.col4-img').eq(index).mouseover(function(){
+				$('.col4-img').eq(index).attr("src","images/iconbg1h.png");
+				$('.col4-img').eq(index).next().css("color","white");
+			})
+			$('.col4-img').eq(index).mouseout(function(){
+				$('.col4-img').eq(index).attr("src","images/iconbg1.png");
+				$('.col4-img').eq(index).next().css("color","black");
+			})
+		});
+
+		//small img
+		$('.small-img').each(function(index,value){
+			$('.small-img').eq(index).parent().mouseover(function(){
+				$('.small-img').eq(index).attr("src","images/iconbgh2.png");
+				$('.small-img').eq(index).next().css("color","white");
+			})
+			$('.small-img').eq(index).parent().mouseout(function(){
+				$('.small-img').eq(index).attr("src","images/iconbg2.png");
+				$('.small-img').eq(index).next().css("color","black");
+			})
+		});
+
+		//button Launch
+		$('#btnLaunch').mouseover(function(){
+			$('#btnLaunch').css("backgroundColor","#ff7200");
+			$('#btnLaunch').css("color","white");
+		})
+		$('#btnLaunch').mouseout(function(){
+			$('#btnLaunch').css("backgroundColor","");
+			$('#btnLaunch').css("color","black");
+		})
+
+
+		//icon-hv
+		$('.icon-hv').each(function(index,value){
+			$('.icon-hv').eq(index).mouseover(function(){
+				$('.icon-hv').eq(index).css("backgroundColor","#ffffff94");
+				$('.icon-hv').eq(index).children().css("color","#ff7200");
+			})
+			$('.icon-hv').eq(index).parent().mouseout(function(){
+				$('.icon-hv').eq(index).css("backgroundColor","");
+				$('.icon-hv').eq(index).children().css("color","white");
+			})
+		});
+		//icon-hv2
+		$('.icon-hv2').each(function(index,value){
+			$('.icon-hv2').eq(index).mouseover(function(){
+				$('.icon-hv2').eq(index).css("backgroundColor","#ffffff94");
+				$('.icon-hv2').eq(index).children().css("color","#ff7200");
+			})
+			$('.icon-hv2').eq(index).parent().mouseout(function(){
+				$('.icon-hv2').eq(index).css("backgroundColor","");
+				$('.icon-hv2').eq(index).children().css("color","white");
+			})
+		});
+		
+		//show img-info
+		$('.img-info').each(function(index,value){
+			$('.img-info').eq(index).parent().mouseover(function(){
+				$('.img-info').eq(index).css("display","block");
+			})
+			$('.img-info').eq(index).parent().mouseout(function(){
+				$('.img-info').eq(index).css("display","none");
+			})
+		});
+		//show img-info2
+		$('.img-info2').each(function(index,value){
+			$('.img-info2').eq(index).parent().mouseover(function(){
+				$('.img-info2').eq(index).css("display","block");
+			})
+			$('.img-info2').eq(index).parent().mouseout(function(){
+				$('.img-info2').eq(index).css("display","none");
+			})
+		});
+
+		//panel
+		$('.panel-title').each(function(index,value){
+			$('.panel-title').eq(index).mouseover(function(){
+				$('.panel-title').eq(index).children().children().attr("src","images/ch_col_icn_h.png");
+				$('.panel-title').eq(index).children().children().next().css("color","white");
+			})
+			$('.panel-title').eq(index).mouseout(function(){
+				$('.panel-title').eq(index).children().children().attr("src","images/ch_col_icn.png");
+				$('.panel-title').eq(index).children().children().next().css("color","black");
+			})
+		});
+		//Submit Event
+		// $('#btnSubmit').click(function(){
+		// 	alert("Submit Success!");
+		// })
+	</script>
+
+	<!-- validateScript -->
+	<script>
+		function validateEmail(email) {
+  			var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  			return re.test(String(email).toLowerCase());
+		}
+
+		var button = document.getElementById('btnSubmit');
+		button.addEventListener('click', function(){
+			event.preventDefault();
+			var firstName = document.getElementById('firstName');
+			var firstName = document.getElementById('firstName');
+			var subject = document.getElementById('subject');
+			var email = document.getElementById('email');
+			if (firstName.value == "") {
+				firstName.nextElementSibling.innerHTML  = "This field can't be empty!";
+				firstName.nextElementSibling.style.display = "block";
+				return;
+			} else {
+				firstName.nextElementSibling.innerHTML = "";
+				firstName.nextElementSibling.style.display = "none";
+			}
+
+			if (lastName.value == "") {
+				lastName.nextElementSibling.innerHTML  = "This field can't be empty!";
+				lastName.nextElementSibling.style.display = "block";
+				return;
+			} else {
+				lastName.nextElementSibling.innerHTML = "";
+				lastName.nextElementSibling.style.display = "none";
+			}
+
+			if (subject.value == "") {
+				subject.nextElementSibling.innerHTML  = "This field can't be empty!";
+				document.getElementById('checkEmail').style.display = "block";
+				return;
+			} else {
+				subject.nextElementSibling.innerHTML = "";
+				subject.nextElementSibling.style.display = "none";
+			}
+
+			if (email.value == "") {
+				email.nextElementSibling.innerHTML  = "This field can't be empty!";
+				subject.nextElementSibling.style.display = "block";
+				return;
+			} else if(!validateEmail(email.value)) {
+				email.nextElementSibling.innerHTML  = "Not true format!";
+				subject.nextElementSibling.style.display = "block";
+				return;
+			} else {
+				email.nextElementSibling.innerHTML = "";
+				subject.nextElementSibling.style.display = "none";
+			}
+
+			alert('Submit Successful!');
+			document.getElementsByClassName('input').reset();
+		});
+	</script>
+	<!-- counter-up -->
+	<script src="jquery.counterup.min.js"></script>
+	<script src="jquery.waypoints.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.counter').counterUp({
+			    delay: 10,
+			    time: 1000
+			});
+		});
+
+		//gallery
+		$(document).ready(function(){
+
+		    $(".filter-button").click(function(){
+		        var value = $(this).attr('data-filter');
+		        
+		        if(value == "all")
+		        {
+		            //$('.filter').removeClass('hidden');
+		            $('.filter').show('1000');
+		        }
+		        else
+		        {
+		//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+		//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+		            $(".filter").not('.'+value).hide('3000');
+		            $('.filter').filter('.'+value).show('3000');
+		            
+		        }
+		    });
+		    
+		    if ($(".filter-button").removeClass("active")) {
+				$(this).removeClass("active");
+			}
+			$(this).addClass("active");
+
+		});
+	</script>
+
 </body>
 </html>
