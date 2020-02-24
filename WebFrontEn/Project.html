@@ -5,7 +5,6 @@
 	<title>Project</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<meta name="author" content="www.frebsite.nl" />
-	<meta content="width=600px user-scalable=yes" name="viewport" />
 	<meta name="robots" content="noindex, nofollow" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -24,10 +23,37 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
+			<p class="btn" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></p>
+			<div class="col-12" id="menu3" >
+				<ul>
+					<div></div>
+					<li><a href="" class="tt4 btn" data-filter="all">HOME</a>
+						<div></div>
+					</li>
+					<li><a href="#page2" class="tt4 btn" data-filter="photo">SERVICE</a>
+						<div></div>
+					</li>
+					<li><a href="#page11" class="tt4 btn" data-filter="brand">TEAMS</a>
+						<div></div>
+					</li>
+					<li><a href="#page13" class="tt4 btn" data-filter="graph">WORKS</a>
+						<div></div>
+					</li>
+					<li><a href="#bg11" class="tt4 btn" data-filter="graph">TESTIMONIAL</a>
+						<div></div>
+					</li>
+					<li><a href="#page16" class="tt4 btn" data-filter="graph">CONTACT</a>
+						<div></div>
+					</li>
+					<li><a href="" class="tt4 btn" data-filter="graph"><i class="fa fa-search" aria-hidden="true"></i></a>
+						<div></div>
+					</li>
+				</ul>
+			</div>
 			<div class="col-12" id="header">
 				<div class="bground">
 					<div id="logo">LOGIC</div>
-					<div id="smenu">
+					<div id="smenu" style="z-index: 1;">
 						<div class="header">
 							<a href="#menu"><span></span></a>
 							<nav id="menu">
@@ -59,19 +85,19 @@
 					</div>
 					<div id="slide-show">
 						<div class="img-slide">
-							<p class="tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;">WELCOME TO OUR LOGIC</p>
+							<p class="tt1 p1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;">WELCOME TO OUR LOGIC</p>
 							<p class="tt2" style="text-align: center;">We Make Awesome Theme For Your Bussiness</p>
 							<div class="btn1 btn" style="margin-top: 8%;">LEARN MORE</div>
 						</div>
 
 						<div class="img-slide">
-							<p class="tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;">ENJOY YOUR EXPERIENCE</p>
+							<p class="tt1 p1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;">ENJOY YOUR EXPERIENCE</p>
 							<p class="tt2" style="text-align: center;">We Make Awesome Theme.</p>
 							<div class="btn1 btn" style="margin-top: 8%;">LEARN MORE</div>
 						</div>
 
 						<div class="img-slide">
-							<p class="tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;">WEUR LOGIC</p>
+							<p class="tt1 p1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;">WEUR LOGIC</p>
 							<p class="tt2" style="text-align: center;">We Make Awesome Theme For Your Bussiness</p>
 							<div class="btn1 btn" style="margin-top: 8%;">LEARN MORE</div>
 						</div>
@@ -86,136 +112,142 @@
 				</div>
 
 			</div>
-			<div class="col-12" style="height: 400px; margin-top: 5%;">
-				<div class="col-5 flat">
+			<div class="col-12" id="page2" style="height: 400px; margin-top: 5%;">
+				<div class="col-5 flat col-sm-3 col-md-3">
 					<img src="images/stabmenubg.png" alt="" class="img-flat">
 					<i class="fa fa-map-marker" aria-hidden="true"></i>
 					<div><p class="tt1" style="	color: black !important;font-size: 14px;">WEB DESIGN</p></div>
 				</div>
-				<div class="col-5 flat">
+				<div class="col-5 flat col-sm-3 col-md-3">
 					<img src="images/stabmenubg.png" alt="" class="img-flat">
 					<i class="fa fa-map-marker" aria-hidden="true"></i>
 					<div><p class="tt1" style="	color: black !important;font-size: 14px;">APP DESIGN</p></div>
 				</div>
-				<div class="col-5 flat">
+				<div class="col-5 flat col-sm-3 col-md-3">
 					<img src="images/stabmenubg.png" alt="" class="img-flat">
 					<i class="fa fa-map-marker" aria-hidden="true"></i>
 					<div><p class="tt1" style="	color: black !important;font-size: 14px;">GRAPHIC DESIGN</p></div>
 				</div>
-				<div class="col-5 flat">
+				<div class="col-5 flat col-sm-3 col-md-3">
 					<img src="images/stabmenubg.png" alt="" class="img-flat">
 					<i class="fa fa-map-marker" aria-hidden="true"></i>
 					<div><p class="tt1" style="	color: black !important;font-size: 14px;">GAME DESIGN</p></div>
 				</div>
 			</div>
-			<div class="col-12" style="height: 600px;">
-				<p class="tt3" style="color: black !important;">WEB DESIGN ONE</p>
-				<div class="extra-bar col-6">
-					<div class="col-3"></div>
+			<div class="col-12" id="page3" style="height: 600px;">
+				<div id="p3div" style="width: 100%; height: 100%;">
+					<p id="p3tt3" class="tt3 col-md-4" style="color: black !important;" id="webDS1">WEB DESIGN ONE</p>
+					<div id="p3div2" class="extra-bar col-6 col-sm-4 col-md-3">
+						<div class="col-3"></div>
+					</div>
+					<p id="p3tt2" class="tt2 col-12 col-sm-6 col-md-6" style="color: black; padding-top: 10% !important; text-align: left; padding:2%;float: left;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quia nulla ratione officiis nostrum id porro magni animi eligendi pariatur.</p>
+					<img class="col-12 col-sm-6 col-md-6" src="images/stab1.png" alt="" style="width: 95%; height: 50%;">
+					<div class="btn1 btn" style="margin-top: 8%; margin-left: 0px;">LEARN MORE</div>
 				</div>
-				<p class="tt2" style="color: black; padding-top: 10% !important; text-align: left; padding:2%;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quia nulla ratione officiis nostrum id porro magni animi eligendi pariatur.</p>
-				<div class="btn1 btn" style="margin-top: 8%; margin-left: 0px;">LEARN MORE</div>
-				<img src="images/stab1.png" alt="" style="width: 95%; height: 50%;">
 			</div>
-			<div class="col-12" style="height: 750px;margin-top: 6%;">
+			<div class="col-12 col-md-12" id="page4" style="height: 750px;margin-top: 6%;">
 				<p class="tt3" style="color: black !important;">FEATURED WORK</p>
-				<div class="extra-bar col-6">
+				<div class="extra-bar col-6 col-sm-4 col-md-3">
 					<div class="col-3"></div>
 				</div>
-				<div class="slideshow-container" style="margin-top: 10%;">
-
-					<div class="mySlides fade">
+				<div id="slideMain" class="slideshow-container col-12 col-sm-6 col-md-6" style="margin-top: 10%;">
+					<div class="mySlides fade col-12 col-sm-6 col-md-12">
 					  <img src="images/featureslid1.jpg" style="width:100%">
 					</div>
 
-					<div class="mySlides fade">
+					<div class="mySlides fade col-12 col-sm-6 col-md-12">
 					  <img src="images/pf6.jpg" style="width:100%">
 					</div>
 
-					<div class="mySlides fade">
+					<div class="mySlides fade col-12 col-sm-6 col-md-12">
 					  <img src="images/featureslid1.jpg" style="width:100%">
 					</div>
 				</div>
 				<br>
-
-				<div style="text-align:center">
+				<div style="text-align:center" id="slideBtn" class="col-12 col-sm-6 col-md-6">
 				  <span class="dot1" onclick="currentSlide(1)"></span> 
 				  <span class="dot1" onclick="currentSlide(2)"></span> 
 				  <span class="dot1" onclick="currentSlide(3)"></span> 
 				</div>
-				<p class="tt3" style="font-size: 14px; padding-top: 10%;">HAND WITH A WATCH</p>
-				<p class="tt2" style="color: black; padding-top: 5% !important; text-align: left; padding:2%;">Able content of a page when looking at its layout. The point of using Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quia nulla ratione officiis nostrum id porro magni animi eligendi pariatur.</p>
-				<p class="tt4" style="padding-bottom: 0px !important;"><b>Client:</b> Dadit Lorm</p>
-				<p class="tt4" style="padding-top: 0px !important;padding-bottom: 0px !important;"><b>Deivered:</b> Sunday,15 August, 2015</p>
-				<p class="tt4" style="padding-top: 0px !important;"><b>Tags:</b> Hand, watch, black, Tree.</p>
-				<div class="btn2 btn" id="btnLaunch">LAUNCH MORE</div>
+				<div id="p4Content" class="col-12 col-sm-6 col-md-6">
+					<p class="tt3 col-12" style="font-size: 14px; padding-top: 10%;">HAND WITH A WATCH</p>
+					<p class="tt2 col-12" style="color: black; padding-top: 5% !important; text-align: left; padding:2%;">Able content of a page when looking at its layout. The point of using Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quia nulla ratione officiis nostrum id porro magni animi eligendi pariatur.</p>
+					<p class="tt4 col-12" style="padding-bottom: 0px !important;"><b>Client:</b> Dadit Lorm</p>
+					<p class="tt4 col-12" style="padding-top: 0px !important;padding-bottom: 0px !important;"><b>Deivered:</b> Sunday,15 August, 2015</p>
+					<p class="tt4 col-12" style="padding-top: 0px !important;"><b>Tags:</b> Hand, watch, black, Tree.</p>
+					<div class="btn2 btn col-12" id="btnLaunch">LAUNCH MORE</div>
+				</div>
 			</div>
-			<div class="col-12" style="height: 600px;margin-top: 20%; padding: 0px !important;">
+			<div class="col-12" id="page5" style="height: 600px;margin-top: 20%; padding: 0px !important;">
 				<div class="bground" style="position: absolute;z-index: 1;">
 				</div>
 				<img src="images/1.jpg" alt="" style="width: 100%; height: 100%;position: absolute;z-index: 0;">
-				<p style="position: absolute; color: white; font-size: 48px; z-index: 2;padding-left: 45%;padding-top: 45%;"><i class="fa fa-play" aria-hidden="true"></i></p>
-				<p style="position: absolute; color: white; font-size: 24px; z-index: 2;text-align: center !important;padding-top: 65%;padding-left: 30%;">WATCH OUR INTRO</p>
+				<p id="p5p1" style="position: absolute; color: white; font-size: 48px; z-index: 2;padding-left: 45%;padding-top: 45%;"><i class="fa fa-play" aria-hidden="true"></i></p>
+				<p id="p5p2" style="position: absolute; color: white; font-size: 24px; z-index: 2;text-align: center !important;padding-top: 65%;padding-left: 30%;">WATCH OUR INTRO</p>
 			</div>
-			<div class="col-12" style="height: 1250px;margin-top: 10%;">
+			<div class="col-12" id="page6" style="height: 1100px;margin-top: 10%;">
 				<p class="tt3" style="color: black !important;">ABOUT LOGIC</p>
-				<div class="extra-bar col-6">
+				<div class="extra-bar col-6 col-sm-4 col-md-3">
 					<div class="col-3"></div>
 				</div>
-				<div class="col-12 ctent1" style="margin-top: 10%;">
-					<div class="col-4">
-						<img class="col4-img" src="images/iconbg1.png" alt="" style="position: absolute;width: 110px;height: 100px;">
-						<i class="fa fa-coffee" aria-hidden="true" style="position: absolute;font-size: 28px;padding:20%;"></i>
+				<div id="p6Div" class="col-12 col-sm-7">
+					<div class="col-12 ctent1" style="margin-top: 10%;">
+						<div class="col-4 col-sm-3">
+							<img class="col4-img" src="images/iconbg1.png" alt="" style="position: absolute;width: 110px;height: 100px;">
+							<i class="fa fa-coffee" aria-hidden="true" style="position: absolute;font-size: 28px;padding:20%;"></i>
+						</div>
+						<div class="col-8" style="float: right;padding: 0px;">
+							<p class="tt3" style="color: black !important;margin-bottom: 0px;">RESPONSIVE DESIGN</p>
+							<p class="tt2" style="color: black; text-align: left; padding:2%;">Able content of a page when looking at its layout. The point of using Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
 					</div>
-					<div class="col-8" style="float: right;padding: 0px;">
-						<p class="tt3" style="color: black !important;margin-bottom: 0px;">RESPONSIVE DESIGN</p>
-						<p class="tt2" style="color: black; text-align: left; padding:2%;">Able content of a page when looking at its layout. The point of using Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<div class="col-12 ctent1" style="margin-top: 8%;float: left;z-index: 1;">
+						<div class="col-4 col-sm-3">
+							<img class="col4-img" src="images/iconbg1.png" alt="" style="position: absolute;width: 110px;height: 100px;">
+							<i class="fa fa-scissors" aria-hidden="true" style="position: absolute;font-size: 28px;padding:20%;"></i>
+						</div>
+						<div class="col-8" style="float: right;padding: 0px;">
+							<p class="tt3" style="color: black !important;margin-bottom: 0px;">EASY TO CUSTOMIZE</p>
+							<p class="tt2" style="color: black; text-align: left; padding:2%;">Able con Lorem ipsum dolor sit.lor sit amet, consectetur adipisicing elit.</p>
+						</div>
+					</div>
+					<div class="col-12 ctent1" style="margin-top: 8%;float: left;z-index: 1;">
+						<div class="col-4 col-sm-3">
+							<img class="col4-img" src="images/iconbg1.png" alt="" style="position: absolute;width: 110px;height: 100px;">
+							<i class="fa fa-headphones" aria-hidden="true" style="position: absolute;font-size: 28px;padding:20%;"></i>
+						</div>
+						<div class="col-8" style="float: right;padding: 0px;">
+							<p class="tt3" style="color: black !important;margin-bottom: 0px;">LIFE TIME SUPPORT</p>
+							<p class="tt2" style="color: black; text-align: left; padding:2%;">Lorem ipsum dolor sit.ng at its layout. The point of using Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
 					</div>
 				</div>
-				<div class="col-12 ctent1" style="margin-top: 8%;float: left;z-index: 1;">
-					<div class="col-4">
-						<img class="col4-img" src="images/iconbg1.png" alt="" style="position: absolute;width: 110px;height: 100px;">
-						<i class="fa fa-scissors" aria-hidden="true" style="position: absolute;font-size: 28px;padding:20%;"></i>
-					</div>
-					<div class="col-8" style="float: right;padding: 0px;">
-						<p class="tt3" style="color: black !important;margin-bottom: 0px;">EASY TO CUSTOMIZE</p>
-						<p class="tt2" style="color: black; text-align: left; padding:2%;">Able con Lorem ipsum dolor sit.lor sit amet, consectetur adipisicing elit.</p>
-					</div>
-				</div>
-				<div class="col-12 ctent1" style="margin-top: 8%;float: left;z-index: 1;">
-					<div class="col-4">
-						<img class="col4-img" src="images/iconbg1.png" alt="" style="position: absolute;width: 110px;height: 100px;">
-						<i class="fa fa-headphones" aria-hidden="true" style="position: absolute;font-size: 28px;padding:20%;"></i>
-					</div>
-					<div class="col-8" style="float: right;padding: 0px;">
-						<p class="tt3" style="color: black !important;margin-bottom: 0px;">LIFE TIME SUPPORT</p>
-						<p class="tt2" style="color: black; text-align: left; padding:2%;">Lorem ipsum dolor sit.ng at its layout. The point of using Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-				</div>
-				<div class="col-12" style="z-index: 0;"><img src="images/abright.png" alt="" style="width: 90%; height: 95%; margin-top: 5%;margin-left: 5%;"></div>
+				<div id="p6Img" class="col-12 col-sm-5" style="z-index: 0;"><img src="images/abright.png" alt="" style="width: 90%; height: 95%; margin-top: 5%;margin-left: 5%;"></div>
 			</div>
-			<div class="col-12" style="height: 100px;margin-top: 5%;">
-				<div class="col-3 flag" >
-					<img class ="flag" src="images/skmenubg.png" alt="">
-					<p class="tt4" style="position: absolute;font-size: 12px;padding-top: 15%;padding-left: 10%;">OUR MISSION</p>
+			<div id="page7" class="col-12 col-sm-6" style="height: 500px;margin-top: 5%;">
+				<div id="p7Div1" class="col-12" style="height: 100px;margin-top: 5%;">
+					<div class="col-4 flag" >
+						<img class ="flag" src="images/skmenubg.png" alt="">
+						<p class="tt4 childFlag" style="position: absolute;font-size: 12px;padding-top: 15%;padding-left: 10%;">OUR MISSION</p>
+					</div>
+					<div class="col-4 flag">
+						<img class="flag" src="images/skmenubg.png" alt="">
+						<p class="tt4 childFlag" style="position: absolute;font-size: 12px;padding-top: 15%;padding-left: 20%;">OUR GOAL</p>
+					</div>
+					<div class="col-4 flag">
+						<img class="flag" src="images/skmenubg.png" alt="">
+						<p class="tt4 childFlag" style="position: absolute;font-size: 12px;padding-top: 15%;padding-left: 10%;">ACHIEVEMENTS</p>
+					</div>
 				</div>
-				<div class="col-3 flag">
-					<img class="flag" src="images/skmenubg.png" alt="">
-					<p class="tt4" style="position: absolute;font-size: 12px;padding-top: 15%;padding-left: 20%;">OUR GOAL</p>
-				</div>
-				<div class="col-3 flag">
-					<img class="flag" src="images/skmenubg.png" alt="">
-					<p class="tt4" style="position: absolute;font-size: 12px;padding-top: 15%;padding-left: 10%;">ACHIEVEMENTS</p>
+				<div class="col-12" style="height: 400px;">
+					<p class="tt2" style="color: black; padding-top: 10% !important; text-align: left; padding:2%;float: none;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quia nulla ratione officiis nostrum id porro magni animi eligendi pariatur.</p>
+					<p class="tt2" style="color: black;text-align: left; padding:2%;float: none;margin:0px !important;"><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp&nbsp We just want to love our client.</p>
+					<p class="tt2" style="color: black;text-align: left; padding:2%;float: none;margin:0px !important;"><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp&nbsp We just want to love our client.</p>
+					<p class="tt2" style="color: black;text-align: left; padding:2%;float: none;margin:0px !important;"><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp&nbsp We just want to love our client.</p>
+					<p class="tt2" style="color: black;text-align: left; padding:2%;float: none;margin:0px !important;"><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp&nbsp We just want to love our client.</p>
 				</div>
 			</div>
-			<div class="col-12" style="height: 400px;">
-				<p class="tt2" style="color: black; padding-top: 10% !important; text-align: left; padding:2%;float: none;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quia nulla ratione officiis nostrum id porro magni animi eligendi pariatur.</p>
-				<p class="tt2" style="color: black;text-align: left; padding:2%;float: none;margin:0px !important;"><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp&nbsp We just want to love our client.</p>
-				<p class="tt2" style="color: black;text-align: left; padding:2%;float: none;margin:0px !important;"><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp&nbsp We just want to love our client.</p>
-				<p class="tt2" style="color: black;text-align: left; padding:2%;float: none;margin:0px !important;"><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp&nbsp We just want to love our client.</p>
-				<p class="tt2" style="color: black;text-align: left; padding:2%;float: none;margin:0px !important;"><i class="fa fa-check-square" aria-hidden="true"></i>&nbsp&nbsp We just want to love our client.</p>
-			</div>
-			<div class="col-12" style="height: 400px;">
+			<div id="page8" class="col-12 col-sm-6" style="height: 400px;">
 				<div class="col-12 chart">
 					<ul>
 						<li class="ttleft tt3">PHOTOSHOP</li>
@@ -254,140 +286,159 @@
 				</div>
 			
 			</div>
-			<div class="col-12" style="height: 900px;padding: 0px;">
+			<div id="page9" class="col-12" style="height: 900px;padding: 0px;">
 				<div class="bground" style="position: absolute;z-index: 1;">
 				</div>
 				<img src="images/3.jpg" alt="" style="width: 100%;height: 100%;position: absolute;z-index: 0;">
-				<div class="col-12 Dcount stat-items" style="margin-top: 10%;height: 25% !important;">
+				<div id="Dcount1" class="col-12 Dcount stat-items col-sm-3" style="margin-top: 10%;height: 25% !important;">
 					<p class="tt1 counter" style="padding-top: 10%;margin-bottom: 0px;">561</p>
 					<p class="tt1" style="color:#ff7200; "><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></p>
 					<p class="tt2">CREATIVE DESIGN</p>
 				</div>
-				<div class="col-12 Dcount stat-items">
+				<div class="col-12 Dcount stat-items col-sm-3">
 					<p class="tt1 counter" style="margin-bottom: 0px;">25</p>
 					<p class="tt1" style="color:#ff7200; "><i class="fa fa-trophy" aria-hidden="true"></i></p>
 					<p class="tt2">AWARDS WON</p>
 				</div>
-				<div class="col-12 Dcount stat-items">
+				<div class="col-12 Dcount stat-items col-sm-3">
 					<p class="tt1 counter" style="margin-bottom: 0px;">236</p>
 					<p class="tt1" style="color:#ff7200; "><i class="fa fa-users" aria-hidden="true"></i></p>
 					<p class="tt2">HAPPY CLIENTS</p>
 				</div>
-				<div class="col-12 Dcount stat-items">
+				<div class="col-12 Dcount stat-items col-sm-3">
 					<p class="tt1 counter" style="margin-bottom: 0px;">365</p>
 					<p class="tt1" style="color:#ff7200; "><i class="fa fa-coffee" aria-hidden="true"></i></p>
 					<p class="tt2">CUP OF COFFEE</p>
 				</div>
 			</div>
-			<div class="col-12" style="height: 1000px;margin-top: 5%;">
+			<div id="page10" class="col-12" style="height: 1000px;margin-top: 5%;">
 				<p class="tt3" style="color: black !important;">THEIR SERVICES</p>
-				<div class="extra-bar col-6">
+				<div class="extra-bar col-6 col-sm-4 col-md-3">
 					<div class="col-3"></div>
 				</div>
-				<div class="col-12=" style="margin-top: 10%;">
-					<div class="col-3" style="height: 70px;float: left;">
-						<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
-						<i class="fa fa-clock-o" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
+				<div class="row">
+					<div class="p10Div col-12 col-sm-4">
+						<div class="col-12" style="margin-top: 10%;">
+							<div class="col-3" style="height: 70px;float: left;">
+								<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
+								<i class="fa fa-clock-o" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
+							</div>
+							<div class="col-9 ctentp10" style="float: right;padding: 0px;">
+								<p class="tt3 page10tt3" style="font-size: 18px;margin-top: 5%;">CREATIVE DESIGN</p>
+								<p class="tt2 page10tt2" style="color: black; text-align: left; padding:2%;margin-top: 5%;position: relative;">The point of using Lorem ipsum dolor sit amet, consectetur elit.</p>
+							</div>
+						</div>
+						
 					</div>
-					<div class="col-9" style="float: right;padding: 0px;">
-						<p class="tt3" style="font-size: 18px;margin-top: 5%;">CREATIVE DESIGN</p>
+					<div class="p10Div col-12 col-sm-4">
+						<div class="col-12" style="margin-top: 10%;">
+							<div class="col-3" style="height: 70px;float: left;">
+								<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
+								<i class="fa fa-picture-o" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
+							</div>
+							<div class="col-9 ctentp10" style="float: right;padding: 0px;">
+								<p class="tt3 page10tt3" style="font-size: 18px;margin-top: 5%;">WEB DEVELOPEMENT</p>
+								<p class="tt2 page10tt2" style="color: black; text-align: left; padding:2%;margin-top: 5%;position: relative;">Point of using Lorem ipsum dolor sit amet, consectetur elit.</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="p10Div col-12 col-sm-4">
+						<div class="col-12" style="margin-top: 10%;">
+							<div class="col-3" style="height: 70px;float: left;">
+								<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
+								<i class="fa fa-television" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
+							</div>
+							<div class="col-9 ctentp10" style="float: right;padding: 0px;">
+								<p class="tt3 page10tt3" style="font-size: 18px;margin-top: 5%;">VIDEO EDITING</p>
+								<p class="tt2 page10tt2" style="color: black; text-align: left; padding:2%;margin-top: 5%;position: relative;">Torem ipsum dolor sit amet, consectetur elit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="p10Div col-12 col-sm-4">
+						<div class="col-12" style="margin-top: 10%;">
+							<div class="col-3" style="height: 70px;float: left;">
+								<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
+								<i class="fa fa-connectdevelop" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
+							</div>
+							<div class="col-9 ctentp10" style="float: right;padding: 0px;">
+								<p class="tt3 page10tt3" style="font-size: 18px;margin-top: 5%;">MARKETING</p>
+								<p class="tt2 page10tt2" style="color: black; text-align: left; padding:2%;margin-top: 5%;position: relative;">Tf using Lorem ipsum dolor sit amet, consectetur elit.</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="p10Div col-12 col-sm-4">
+						<div class="col-12" style="margin-top: 10%;">
+							<div class="col-3" style="height: 70px;float: left;">
+								<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
+								<i class="fa fa-camera-retro" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
+							</div>
+							<div class="col-9 ctentp10" style="float: right;padding: 0px;">
+								<p class="tt3 page10tt3" style="font-size: 18px;margin-top: 5%;">PHOTOGRAPHY</p>
+								<p class="tt2 page10tt2" style="color: black; text-align: left; padding:2%;margin-top: 5%;position: relative;">Lorem ipsum.t of using Lorem ipsum dolor sit amet, consectetur elit.</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="p10Div col-12 col-sm-4">
+						<div class="col-12" style="margin-top: 10%;">
+							<div class="col-3" style="height: 70px;float: left;">
+								<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
+								<i class="fa fa-snowflake-o" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
+							</div>
+							<div class="col-9 ctentp10" style="float: right;padding: 0px;">
+								<p class="tt3 page10tt3" style="font-size: 18px;margin-top: 5%;">LOGO DESIGN</p>
+								<p class="tt2 page10tt2" style="color: black; text-align: left; padding:2%;margin-top: 5%;position: relative;">Using Lorem ipsum dolor sit amet, consectetur elit.</p>
+							</div>
+						</div>
+						
 					</div>
 				</div>
-				<p class="tt2" style="color: black; text-align: left; padding:2%;margin-top: 25%;position: relative;">The point of using Lorem ipsum dolor sit amet, consectetur elit.</p>
-				<div class="col-12=" style="margin-top: 10%;">
-					<div class="col-3" style="height: 70px;float: left;">
-						<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
-						<i class="fa fa-picture-o" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
-					</div>
-					<div class="col-9" style="float: right;padding: 0px;">
-						<p class="tt3" style="font-size: 18px;margin-top: 5%;">WEB DEVELOPEMENT</p>
-					</div>
-				</div>
-				<p class="tt2" style="color: black; text-align: left; padding:2%;margin-top: 25%;position: relative;">Point of using Lorem ipsum dolor sit amet, consectetur elit.</p>
-				<div class="col-12=" style="margin-top: 10%;">
-					<div class="col-3" style="height: 70px;float: left;">
-						<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
-						<i class="fa fa-television" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
-					</div>
-					<div class="col-9" style="float: right;padding: 0px;">
-						<p class="tt3" style="font-size: 18px;margin-top: 5%;">VIDEO EDITING</p>
-					</div>
-				</div>
-				<p class="tt2" style="color: black; text-align: left; padding:2%;margin-top: 25%;position: relative;">Torem ipsum dolor sit amet, consectetur elit.</p>
-				<div class="col-12=" style="margin-top: 10%;">
-					<div class="col-3" style="height: 70px;float: left;">
-						<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
-						<i class="fa fa-connectdevelop" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
-					</div>
-					<div class="col-9" style="float: right;padding: 0px;">
-						<p class="tt3" style="font-size: 18px;margin-top: 5%;">MARKETING</p>
-					</div>
-				</div>
-				<p class="tt2" style="color: black; text-align: left; padding:2%;margin-top: 25%;position: relative;">Tf using Lorem ipsum dolor sit amet, consectetur elit.</p>
-				<div class="col-12=" style="margin-top: 10%;">
-					<div class="col-3" style="height: 70px;float: left;">
-						<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
-						<i class="fa fa-camera-retro" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
-					</div>
-					<div class="col-9" style="float: right;padding: 0px;">
-						<p class="tt3" style="font-size: 18px;margin-top: 5%;">PHOTOGRAPHY</p>
-					</div>
-				</div>
-				<p class="tt2" style="color: black; text-align: left; padding:2%;margin-top: 25%;position: relative;">Lorem ipsum.t of using Lorem ipsum dolor sit amet, consectetur elit.</p>
-				<div class="col-12=" style="margin-top: 10%;">
-					<div class="col-3" style="height: 70px;float: left;">
-						<img class="small-img" src="images/iconbg2.png" alt="" style="position: absolute;width: 70px;height: 70px;">
-						<i class="fa fa-snowflake-o" aria-hidden="true" style="position: absolute;font-size: 20px;padding:20%;"></i>
-					</div>
-					<div class="col-9" style="float: right;padding: 0px;">
-						<p class="tt3" style="font-size: 18px;margin-top: 5%;">LOGO DESIGN</p>
-					</div>
-				</div>
-				<p class="tt2" style="color: black; text-align: left; padding:2%;margin-top: 25%;position: relative;">Using Lorem ipsum dolor sit amet, consectetur elit.</p>
 			</div>
-			<div class="col-12" style="height:2550px;margin-top: 20%;">
+			<div id="page11" class="col-12" style="height:2550px;margin-top: 20%;">
 				<p class="tt3" style="color: black !important;">THEIR SERVICES</p>
-				<div class="extra-bar col-6">
+				<div class="extra-bar col-6 col-sm-4">
 					<div class="col-3"></div>
 				</div>
-				<div class="col-12 img-div" style="margin-top: 17%;">
+				<div class="col-12 img-div col-sm-3" style="margin-top: 17%;">
 					<img src="images/team1.jpg" alt="" style="width: 92%;z-index: 0;position: absolute;">
 					<div class="img-info">
-						<p class="tt3" style="color: white;padding-top: 15%;padding-left: 15%;margin-bottom: 0px;">SEMF UCUK</p>
-						<p class="tt4" style="padding-left: 15%;color: white;margin-bottom: 35%;">FOUNDER</p>
+						<p class="tt3 p11tt3" style="color: white;padding-top: 15%;padding-left: 15%;margin-bottom: 0px;">SEMF UCUK</p>
+						<p class="tt4 p11tt4" style="padding-left: 15%;color: white;margin-bottom: 35%;">FOUNDER</p>
 						<div class="icon-hv"><i class="fa fa-facebook" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
 						<div class="icon-hv"><i class="fa fa-twitter" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
 						<div class="icon-hv"><i class="fa fa-google-plus" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
 						<div class="icon-hv"><i class="fa fa-pinterest-p" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
 					</div>
 				</div>
-				<div class="col-12 img-div">
+				<div class="col-12 img-div col-sm-3">
 					<img src="images/team2.jpg" alt="" style="width: 92%;z-index: 0;position: absolute;">
 					<div class="img-info">
-						<p class="tt3" style="color: white;padding-top: 15%;padding-left: 15%;margin-bottom: 0px;">DICK ADALIN</p>
-						<p class="tt4" style="padding-left: 15%;color: white;margin-bottom: 35%;">ENGINEERING</p>
+						<p class="tt3 p11tt3" style="color: white;padding-top: 15%;padding-left: 15%;margin-bottom: 0px;">DICK ADALIN</p>
+						<p class="tt4 p11tt4" style="padding-left: 15%;color: white;margin-bottom: 35%;">ENGINEERING</p>
 						<div class="icon-hv"><i class="fa fa-facebook" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
 						<div class="icon-hv"><i class="fa fa-twitter" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
 						<div class="icon-hv"><i class="fa fa-google-plus" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
 						<div class="icon-hv"><i class="fa fa-pinterest-p" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
 					</div>
 				</div>
-				<div class="col-12 img-div">
+				<div class="col-12 img-div col-sm-3">
 					<img src="images/team3.jpg" alt="" style="width: 92%;z-index: 0;position: absolute;">
 					<div class="img-info">
-						<p class="tt3" style="color: white;padding-top: 15%;padding-left: 15%;margin-bottom: 0px;">SAM SMITH</p>
-						<p class="tt4" style="padding-left: 15%;color: white;margin-bottom: 35%;">MANAGER</p>
+						<p class="tt3 p11tt3" style="color: white;padding-top: 15%;padding-left: 15%;margin-bottom: 0px;">SAM SMITH</p>
+						<p class="tt4 p11tt4" style="padding-left: 15%;color: white;margin-bottom: 35%;">MANAGER</p>
 						<div class="icon-hv"><i class="fa fa-facebook" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
 						<div class="icon-hv"><i class="fa fa-twitter" aria-hidden="true" style="color: white;padding: 30%;"></i></div>	
 						<div class="icon-hv"><i class="fa fa-google-plus" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
 						<div class="icon-hv"><i class="fa fa-pinterest-p" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
 					</div>
 				</div>
-				<div class="col-12 img-div" >
+				<div class="col-12 img-div col-sm-3" >
 					<img src="images/team4.jpg" alt="" style="width: 92%;z-index: 0;position: absolute;">
 					<div class="img-info">
-						<p class="tt3" style="color: white;padding-top: 15%;padding-left: 15%;margin-bottom: 0px;">ALISA SMEL</p>
-						<p class="tt4" style="padding-left: 15%;color: white;margin-bottom: 35%;">ACCOUNTANT</p>
+						<p class="tt3 p11tt3" style="color: white;padding-top: 15%;padding-left: 15%;margin-bottom: 0px;">ALISA SMEL</p>
+						<p class="tt4 p11tt4" style="padding-left: 15%;color: white;margin-bottom: 35%;">ACCOUNTANT</p>
 						<div class="icon-hv"><i class="fa fa-facebook" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
 						<div class="icon-hv"><i class="fa fa-twitter" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
 						<div class="icon-hv"><i class="fa fa-google-plus" aria-hidden="true" style="color: white;padding: 30%;"></i></div>
@@ -395,16 +446,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12" style="height: 1300px;">
+			<div id="page12" class="col-12" style="height: 1300px;">
 				<p class="tt3" style="color: black !important;">WHY CHOOSE US</p>
-				<div class="extra-bar col-6">
+				<div class="extra-bar col-6 col-sm-4">
 					<div class="col-3"></div>
 				</div>
-				<div id="content col-12">
-					<div class="panel" style="	margin-top: 15%;">
+				<div id="content" class="col-12 col-sm-6">
+					<div id="panel1" class="panel" style="	margin-top: 15%;">
 						<div class="panel-title" data-toggle="collapse" href="#pc1">
-							<div class="plus col-2" style="float: left;padding-left: 0px;"><img src="images/ch_col_icn.png" alt=""><i class="fa fa-picture-o" aria-hidden="true"></i></div>
-							<p class="tt3 col-10" style="float: right;font-size: 18px;padding-top: 3%;">GREAT DESIGN</p>
+							<div class="plus col-2 col-sm-3" style="float: left;padding-left: 0px;"><img src="images/ch_col_icn.png" alt=""><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+							<p class="tt3 col-10 col-sm-9" style="float: right;font-size: 18px;padding-top: 3%;">GREAT DESIGN</p>
 						</div>
 						<div class="panel-content" id="pc1" class="collapsed">
 							<p class="tt2" style="color: black; " id="pc1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere aperiam atque expedita eaque, quaerat incidunt nulla, eius provident aliquam natus.</p>
@@ -412,8 +463,8 @@
 					</div>
 					<div class="panel">
 						<div class="panel-title" data-toggle="collapse" href="#pc2">
-							<div class="plus col-2" style="float: left;padding-left: 0px;"><img src="images/ch_col_icn.png" alt=""><i class="fa fa-sitemap" aria-hidden="true"></i></div>
-							<p class="tt3 col-10" style="float: right;font-size: 18px;padding-top: 3%;">RESPONSIVE DESIGN</p>
+							<div class="plus col-2 col-sm-3" style="float: left;padding-left: 0px;"><img src="images/ch_col_icn.png" alt=""><i class="fa fa-sitemap" aria-hidden="true"></i></div>
+							<p class="tt3 col-10 col-sm-9" style="float: right;font-size: 18px;padding-top: 3%;">RESPONSIVE DESIGN</p>
 						</div>
 						<div class="panel-content" id="pc2" class="collapse">
 							<p class="tt2" style="color: black; ">Ipsum dolor sit amet, consectetur adipisicing elit. Facere aperiam atque expedita eaque,Lorem ipsum dolor. quaerat incidunt nulla, eius provident aliquam natus.</p>
@@ -421,8 +472,8 @@
 					</div>
 					<div class="panel">
 						<div class="panel-title" data-toggle="collapse" href="#pc3">
-							<div class="plus col-2" style="float: left;padding-left: 0px;"><img src="images/ch_col_icn.png" alt=""><i class="fa fa-certificate" aria-hidden="true"></i></div>
-							<p class="tt3 col-10" style="float: right;font-size: 18px;padding-top: 3%;">RATINA READY</p>
+							<div class="plus col-2 col-sm-3" style="float: left;padding-left: 0px;"><img src="images/ch_col_icn.png" alt=""><i class="fa fa-certificate" aria-hidden="true"></i></div>
+							<p class="tt3 col-10 col-sm-9" style="float: right;font-size: 18px;padding-top: 3%;">RATINA READY</p>
 						</div>
 						<div class="panel-content" id="pc3" class="collapse">
 							<p class="tt2" style="color: black; ">Kolor sit amet, consectetur adipisicing elit. Facere aperiam atque expedita eaque, quaerat incidunt nulla, eius provident aliquam natus.</p>
@@ -430,8 +481,8 @@
 					</div>
 					<div class="panel">
 						<div class="panel-title" data-toggle="collapse" href="#pc4">
-							<div class="plus col-2" style="float: left;padding-left: 0px;"><img src="images/ch_col_icn.png" alt=""><i class="fa fa-umbrella" aria-hidden="true"></i></div>
-							<p class="tt3 col-10" style="float: right;font-size: 18px;padding-top: 3%;">FREE GOOGLE FONT</p>
+							<div class="plus col-2 col-sm-3" style="float: left;padding-left: 0px;"><img src="images/ch_col_icn.png" alt=""><i class="fa fa-umbrella" aria-hidden="true"></i></div>
+							<p class="tt3 col-10 col-sm-9" style="float: right;font-size: 18px;padding-top: 3%;">FREE GOOGLE FONT</p>
 						</div>
 						<div class="panel-content" id="pc4" class="collapse">
 							<p class="tt2" style="color: black;">Hpsum dolor sit amet, consectetur adipisicing elit. Facere aperiam atqu Lorem ipsum dolor sit.e expedita eaque, quaerat incidunt nulla, eius provident aliquam natus.</p>
@@ -439,21 +490,21 @@
 					</div>
 					<div class="panel" style="margin-bottom: 15%;">
 						<div class="panel-title" data-toggle="collapse" href="#pc5">
-							<div class="plus col-2" style="float: left;padding-left: 0px;"><img src="images/ch_col_icn.png" alt=""><i class="fa fa-bus" aria-hidden="true"></i></div>
-							<p class="tt3 col-10" style="float: right;font-size: 18px;padding-top: 3%;">1170 PX GRID BASE</p>
+							<div class="plus col-2 col-sm-3" style="float: left;padding-left: 0px;"><img src="images/ch_col_icn.png" alt=""><i class="fa fa-bus" aria-hidden="true"></i></div>
+							<p class="tt3 col-10 col-sm-9" style="float: right;font-size: 18px;padding-top: 3%;">1170 PX GRID BASE</p>
 						</div>
 						<div class="panel-content" id="pc5" class="collapse">
 							<p class="tt2" style="color: black;">Korem ipsum dolor sit amet, consectetur adipisicing elit. Facere aperiam atque expedita eaque, quaerat incidunt nulla, eius provident aliquam natus.</p>
 						</div>
 					</div>
 				</div>
-				<div>
-					<img src="images/choose.png" alt="">
+				<div id="p12Img" class="col-12 col-sm-6">
+					<img width="100%" height="100%" src="images/choose.png" alt="">
 				</div>
 			</div>
-			<div class="col-12" style="height: 1000px;padding: 0px !important;	">
-				<p class="tt3" style="color: black !important;text-align: center;">LATEST PROJECT</p>
-				<div class="extra-bar col-6" style="margin-left: 25%;">
+			<div id="page13" class="col-12" style="height: 1000px;padding: 0px !important;	">
+				<p class="tt3 col-12" style="color: black !important;text-align: center;">LATEST PROJECT</p>
+				<div class="extra-bar col-6 col-sm-6" style="margin-left: 25%;">
 					<div class="col-3"></div>
 				</div>
 				<div class="col-12" id="menu2" >
@@ -563,17 +614,17 @@
 				<div class="bground">
 					<div id="slide-show">
 						<div class="img-slide">
-							<p class="tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;"><i class="fa fa-quote-left" aria-hidden="true"></i></p>
+							<p class="tt1 bg11tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;"><i class="fa fa-quote-left" aria-hidden="true"></i></p>
 							<p class="tt2" style="text-align: center; padding: 5%;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, maxime.nsectetur adipisicing elit. Mollitia, corrupti, et! Facere iste, nisi eum cumque. Illum eveniet at minima.</p>
 							<p class="tt3" style="color: white;text-align: center;"><b>GRAPH GALADRIEL</b>&nbsp -- MANAGER TENGKUREP</p>
 						</div>
 						<div class="img-slide">
-							<p class="tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;"><i class="fa fa-quote-left" aria-hidden="true"></i></p>
+							<p class="tt1 bg11tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;"><i class="fa fa-quote-left" aria-hidden="true"></i></p>
 							<p class="tt2" style="text-align: center; padding: 5%;">There are many variations of passages of Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, corrupti, et! Facere iste, nisi eum cumque. Illum eveniet at minima.</p>
 							<p class="tt3" style="color: white;text-align: center;"><b>JANE GALADRIEL</b>&nbsp -- CEO TENGKUREP</p>
 						</div>
 						<div class="img-slide">
-							<p class="tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;"><i class="fa fa-quote-left" aria-hidden="true"></i></p>
+							<p class="tt1 bg11tt1" style="font-size: 48px; padding-left: 10%; padding-top: 40%;padding-right: 10%;"><i class="fa fa-quote-left" aria-hidden="true"></i></p>
 							<p class="tt2" style="text-align: center; padding: 5%;">Koran Lorem ipsum dolor sit. consectetur adipisicing elit. Mollitia, corrupti, et! Facere iste, nisi eum cumque. Illum eveniet at minima.</p>
 							<p class="tt3" style="color: white;text-align: center;"><b>JANE DANIEL</b>&nbsp -- ASSISTANT TENGKUREP</p>
 						</div>
@@ -587,17 +638,17 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12" style="height: 600px;background-color: #e6e6e6;">
-				<div class="col-6 clogo" style="margin-top: 15%;"><img src="images/clogo1.png" alt=""></div>
-				<div class="col-6 clogo"  style="margin-top: 15%;"><img src="images/clogo2.png" alt=""></div>
-				<div class="col-6 clogo"><img src="images/clogo3.png" alt=""></div>
-				<div class="col-6 clogo"><img src="images/clogo4.png" alt=""></div>
-				<div class="col-6 clogo"><img src="images/clogo5.png" alt=""></div>
-				<div class="col-6 clogo"><img src="images/clogo9.png" alt=""></div>
+			<div id="page15" class="col-12" style="height: 600px;background-color: #e6e6e6;">
+				<div class="col-6 clogo col-sm-2" style="margin-top: 15%;"><img src="images/clogo1.png" alt=""></div>
+				<div class="col-6 clogo col-sm-2"  style="margin-top: 15%;"><img src="images/clogo2.png" alt=""></div>
+				<div class="col-6 clogo col-sm-2"><img src="images/clogo3.png" alt=""></div>
+				<div class="col-6 clogo col-sm-2"><img src="images/clogo4.png" alt=""></div>
+				<div class="col-6 clogo col-sm-2"><img src="images/clogo5.png" alt=""></div>
+				<div class="col-6 clogo col-sm-2"><img src="images/clogo9.png" alt=""></div>
 			</div>
-			<div class="col-12" style="height: 600px; margin-top: 6%;">
+			<div id="page16" class="col-12 col-sm-6" style="height: 600px; margin-top: 6%;">
 				<p class="tt3" style="color: black !important;">CONTACT INFO</p>
-				<div class="extra-bar col-6">
+				<div class="extra-bar col-6 col-sm-6">
 					<div class="col-3"></div>
 				</div>
 				<div class="col-12 ctent1" style="margin-top: 15%;">
@@ -641,8 +692,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12" style="height: 800px;">
-				<p class="tt3" style="color: black !important;">CONTACT INFO</p>
+			<div id="page17" class="col-12 col-sm-6" style="height: 800px;">
+				<p class="tt3" style="color: black !important;">LEAVE MESSAGE</p>
 				<div class="extra-bar col-6">
 					<div class="col-3"></div>
 				</div>
@@ -669,7 +720,60 @@
 					<div class="btn2 btn" id="btnSubmit">Submit</div>
 				</div>	
 			</div>
-			<div class="col-12"></div>
+			<div class="col-12" id="bg13" style="margin-bottom: 5%;">
+				<div id="Gmap">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14899.460708567658!2d105.85680898095734!3d20.99804087623886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac6dce1c3075%3A0x1151330eb74574fe!2zSOG7hyB0aOG7kW5nIGdpw6FvIGThu6VjIHbDoCBjw7RuZyBuZ2jhu4cgWmVudA!5e0!3m2!1svi!2s!4v1582463433163!5m2!1svi!2s" frameborder="0" style="border:0;" allowfullscreen="" width="100%" height="200"></iframe>
+				</div>
+			</div>
+			<div id="page19" class="col-12" style="height: 1000px;background-color: #333333;">
+				<div id="p19Div" class="col-12 col-sm-3" style="height: 20%">
+					<div id="logo1">LOGIC</div>
+					<p class="tt4" style="position: absolute; color: white;margin-top: 20%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque veritatis, nam amet ut quae sed facere saepe recusandae modi voluptatem maxime, dolorum nemo quia similique perspiciatis ex! Ratione numquam, dolore. Dolores dolore corporis maxime nesciunt omnis, vero illo veniam consequuntur?</p>
+				</div>
+				<div class="col-12 fMenu col-sm-3">
+					<p class="tt3" style="color: white;margin-top: 10%;">SITEMAP</p>
+					<div class="extra-bar col-6">
+						<div class="col-3"></div>
+					</div>
+					<ul>
+						<li style="padding-top: 5%;">Services</li>
+						<li>About Us</li>
+						<li>Our Team</li>
+						<li>Portfolio</li>
+					</ul>
+				</div>
+				<div class="col-12 fMenu col-sm-3">
+					<p class="tt3" style="color: white;margin-top: 10%;">ACHIVES</p>
+					<div class="extra-bar col-6">
+						<div class="col-3"></div>
+					</div>
+					<ul>
+						<li style="padding-top: 5%;">January 2015</li>
+						<li>February 2015</li>
+						<li>March 2015</li>
+						<li>April 2015</li>
+					</ul>
+				</div>
+				<div class="col-12 fMenu col-sm-3">
+					<p class="tt3" style="color: white;margin-top: 10%;">NEWSLETTER</p>
+					<div class="extra-bar col-6">
+						<div class="col-3"></div>
+					</div>
+					<p class="tt4" style="color: white;">Sign up our maiting tist to get latest updates and offers.</p>
+					<input class="col-12" type="text" placeholder="Search">
+				</div>
+			</div>
+			<div id="page20" class="col-12" style="height: 200px;background-color: #1a1a1a;">
+				<p class="col-12 col-sm-6" style="padding-top: 5%;color: white;text-align: center;">Made with &nbsp &nbsp <i class="fa fa-heart" aria-hidden="true" style="color: red;font-size: 18px;"></i> &nbsp &nbsp by <b style="font-size: 14px;color:#ff7200; ">Bootstrap Themes</b> &nbsp 2016. All Right Reserved.</p>
+				<div class="col-12 col-sm-6" id="footer1">
+					<div style="margin-left: 15%;" class="footerIcon"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+					<div class="footerIcon"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+					<div class="footerIcon"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+					<div class="footerIcon"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+					<div class="footerIcon"><i class="fa fa-newspaper-o" aria-hidden="true"></i></div>
+					<div class="footerIcon"><i class="fa fa-link" aria-hidden="true"></i></div>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -693,11 +797,10 @@
 		});
 
 		//	Open the menu.
-		document.querySelector( 'a[href="#menu"]' )
-			.addEventListener( 'click', evnt => {
-				evnt.preventDefault();
-				drawer.open();
-			});
+		document.querySelector( 'a[href="#menu"]' ).addEventListener( 'click', evnt => {
+			evnt.preventDefault();
+			drawer.open();
+		});
 
 		window.onload = function(){
 			var imgSlide 	= document.getElementsByClassName("img-slide");
@@ -890,6 +993,7 @@
 				$('.panel-title').eq(index).children().children().next().css("color","black");
 			})
 		});
+
 		//Submit Event
 		// $('#btnSubmit').click(function(){
 		// 	alert("Submit Success!");
@@ -993,6 +1097,27 @@
 
 		});
 	</script>
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
 
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+	</script>
 </body>
 </html>

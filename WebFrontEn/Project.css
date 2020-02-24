@@ -125,7 +125,7 @@ a, a:link, a:active, a:visited, a:hover {
 }
 .btn1{
 	width: 40%;
-	height: 8%;
+	height: 7%;
 	background-color: #ff7200;
 	color: white;
 	margin-left: 30%;
@@ -470,4 +470,497 @@ img {vertical-align: middle;}
 	border: solid 2px #ff7200;
 	margin-top: 10%;
 	margin-left: 30%;
+}
+#bg13{
+	widows: 100%;
+	height: 200px;
+	padding: 0px !important;
+}
+#Gmap{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 0;
+	margin-top: 5%;
+}
+#logo1{
+	width: 20%;
+	height: 40px;
+	margin-left: 5%;
+	position: absolute;
+	margin-top: 10%;
+	border: solid 1.5px #999999;
+	color:#ff7200;
+	font-size: 150%;
+	text-align: center;
+	padding-top: 1%;
+}
+.fMenu{
+	height: 17%;
+}
+.fMenu>ul li{
+	color: white;
+	list-style: none;
+	padding: 1%;
+}
+.fMenu input{
+	background-color: #333333;
+	border: solid 1.5px #999999;
+	height: 25%;
+}
+#footer1{
+	width: 100%;
+	height: 50%;
+}
+#footer1>div{
+	width: 8%;
+	height: 35%;
+	border: solid 1.5px #999999;
+	display: block;
+	float: left;
+	margin-top: 8%;
+	margin-right: 3%;
+}
+#footer1>div i{
+	font-size: 18px;
+	padding: 25%;
+	color: white;
+}
+.fMenu>ul>li:hover{
+	color: #ff7200;
+}
+.footerIcon:hover{
+	background-color: #ff7200;
+}
+#myBtn{
+	/*display: none;*/
+	width: 30px;
+	height: 35px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+	font-size: 24px;
+	color: #999999;
+	border-radius: 10px;
+	cursor: pointer;
+	outline: none;
+}
+#myBtn:hover{
+	color: #ff7200;
+}
+#p4Content{
+	width: 100%;
+	height: 
+}
+.p10Div{
+	height: 100px;
+}
+#menu3{
+	position: absolute;
+	margin-top: 5%;
+	z-index: 1;
+	margin-left: 32%;
+	width: 65%;
+	height: 50px;
+	display: none;
+}
+#menu3>ul>li{
+	list-style: none;
+	display: block;
+	float: left;
+	line-height: 35px;
+}
+#menu3>ul>li a{
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	padding-left: 5px;
+	padding-right: 2px;
+	padding-bottom: 0px !important;
+	margin-bottom: 0px !important;
+}
+#menu3>ul>li div{
+	width: 100%;
+	height: 3px;
+	padding: 0 !important;
+}
+#menu3>ul>li:hover div{
+	background-color: #ff7200;
+}
+@media screen and (min-width: 768px) and (max-width: 990px){
+	#smenu{
+		display: none;
+	}
+	#menu3{
+		display: block;
+	}
+	.p1{
+		padding-top: 15% !important;
+	}
+	.flat{
+		height: 75%;
+		margin-left: 0px !important;
+	}
+	#page2{
+		height: 200px !important;
+	}
+	#p3tt2, #p3div2,{
+		float: left;
+	}
+	#p5p1{
+		padding-top: 25% !important;
+	}
+	#p5p2{
+		padding-top: 45% !important;
+	}
+	#slideMain{
+		float: left;
+		padding: 0px !important;
+		position: absolute;
+	}
+	#slideBtn{
+		float: left;
+		margin-top: 40%;
+	}
+	#p4Content{
+		float: right;
+	}
+	#btnLaunch{
+		width: 50%;
+	}
+	#page4{
+		height: 350px !important;
+	}
+	.ctent1{
+		padding: 0px !important;
+	}
+	.col4-img{
+		width: 80px !important;
+		height: 70px !important;
+	}
+	#p6Div{
+		float: left;
+		position: absolute;
+	}
+	#p6Img{
+		float: right;
+	}
+	#p6Img{
+		margin-left: 25%;
+	}
+	#page6{
+		height: 550px!important;
+	}
+	.flag{
+		height: 85%;
+	}
+	.childFlag{
+		padding-left: 5px !important;
+		padding-top: 5% !important;
+	}
+	#p7Div1{
+		height: 50px !important;
+	}
+	#page8{
+		margin-top: 10%;
+		padding: 0px !important;
+	}
+	.ttleft, .ttright{
+		font-size: 14px !important;
+	}
+	.chart{
+		padding-left: 0px !important;
+		width: 95%;
+	}
+	#page9{
+		height: 350px !important;
+	}
+	.counter{
+		padding-top: 0px !important;
+	}
+	.Dcount{
+		margin-top: 10%;
+	}
+	.p10Div{
+		padding: 0px !important;
+		float: left;
+		margin-top: 5%;
+	}
+	.small-img{
+		width: 50px !important;
+		height: 50px !important;
+	}
+	.page10tt3{
+		font-size: 14px !important;
+		margin:0px !important;
+	}
+	.page10tt2{
+		font-size: 12px !important;
+		margin:0px !important;
+	}
+	.ctentp10{
+		padding-left: 10% !important;
+	}
+	#page10{
+		height: 300px !important;
+	}
+	.img-div{
+		float: left;
+		margin-top: 10% !important;
+		height: 200px !important;
+	}
+	.p11tt3{
+		font-size: 14px !important;
+	}
+	.p11tt4{
+		font-size: 10px !important;
+		margin-bottom: 10px !important;
+	}
+	.icon-hv{
+		font-size: 10px !important;
+	}
+	#page11{
+		height: 400px !important;
+	}
+	#page12{
+		height: 600px !important;
+	}
+	#content{
+		margin-left: 0px !important;
+		float: left;
+	}
+	#p12Img{
+		float: right;
+	}
+	#page13{
+		height: 1350px !important;
+	}
+	.bg11tt1{
+		padding-top: 10% !important;
+	}
+	.clogo{
+		margin-top: 5% !important;
+	}
+	#bg11{
+		height: 400px !important;
+	}
+	#page15{
+		height: 150px !important;
+	}
+	#page17{
+		margin-top: 6%;
+		height: 600px !important;
+	}
+	#p19Div{
+		float: left;
+	}
+	.fMenu{
+		float: left;
+	}
+	#logo1{
+		width: 50%;
+	}
+	#p19Div p{
+		margin-top: 35% !important;
+	}
+	#page19{
+		height: 500px !important;
+	}
+	#page20 p{
+		float: left;
+	}
+	#footer1{
+		float: right;
+	}
+	.footerIcon{
+		width: 11% !important;
+		height: 60% !important;
+	}
+	#page20{
+		height: 100px !important;
+	}
+}
+@media screen and (min-width: 576px) and (max-width: 766px) {
+	#smenu{
+		display: none;
+	}
+	#menu3{
+		display: block;
+	}
+	.p1{
+		padding-top: 30% !important;
+	}
+	.flat{
+		height: 75%;
+		margin-left: 0px !important;
+	}
+	#page2{
+		height: 200px !important;
+	}
+	/*#slideMain{
+		float: left;
+		padding: 0px !important;
+		position: absolute;
+	}
+	#slideBtn{
+		float: left;
+		margin-top: 40%;
+	}*/
+	#p4Content{
+		float: right;
+	}
+	#btnLaunch{
+		width: 50%;
+	}
+	#page4{
+		height: 350px !important;
+	}
+	.ctent1{
+		padding: 0px !important;
+	}
+	.col4-img{
+		width: 80px !important;
+		height: 70px !important;
+	}
+	#p6Div{
+		float: left;
+		position: absolute;
+	}
+	#p6Img{
+		float: right;
+	}
+	#p6Img{
+		margin-left: 25%;
+	}
+	#page6{
+		height: 550px!important;
+	}
+	.flag{
+		height: 85%;
+	}
+	.childFlag{
+		padding-left: 0px !important;
+	}
+	#p7Div1{
+		height: 50px !important;
+	}
+	#page8{
+		margin-top: 10%;
+		padding: 0px !important;
+	}
+	.ttleft, .ttright{
+		font-size: 14px !important;
+	}
+	.chart{
+		padding-left: 0px !important;
+		width: 95%;
+	}
+	#page9{
+		height: 300px !important;
+	}
+	.counter{
+		padding-top: 0px !important;
+	}
+	.Dcount{
+		margin-top: 10%;
+	}
+	.p10Div{
+		padding: 0px !important;
+		float: left;
+		margin-top: 5%;
+	}
+	.small-img{
+		width: 50px !important;
+		height: 50px !important;
+	}
+	.page10tt3{
+		font-size: 14px !important;
+		margin:0px !important;
+	}
+	.page10tt2{
+		font-size: 12px !important;
+		margin:0px !important;
+	}
+	.ctentp10{
+		padding-left: 10% !important;
+	}
+	#page10{
+		height: 300px !important;
+	}
+	.img-div{
+		float: left;
+		margin-top: 10% !important;
+		height: 200px !important;
+	}
+	.p11tt3{
+		font-size: 14px !important;
+	}
+	.p11tt4{
+		font-size: 10px !important;
+		margin-bottom: 10px !important;
+	}
+	.icon-hv{
+		font-size: 10px !important;
+	}
+	#page11{
+		height: 400px !important;
+	}
+	#page12{
+		height: 600px !important;
+	}
+	#content{
+		margin-left: 0px !important;
+		float: left;
+	}
+	#p12Img{
+		float: right;
+	}
+	#page13{
+		height: 1350px !important;
+	}
+	.bg11tt1{
+		padding-top: 10% !important;
+	}
+	.clogo{
+		margin-top: 5% !important;
+	}
+	#bg11{
+		height: 400px !important;
+	}
+	#page15{
+		height: 150px !important;
+	}
+	#page17{
+		margin-top: 6%;
+		height: 600px !important;
+	}
+	#p19Div{
+		float: left;
+	}
+	.fMenu{
+		float: left;
+	}
+	#logo1{
+		width: 50%;
+	}
+	#p19Div p{
+		margin-top: 35% !important;
+	}
+	#page19{
+		height: 500px !important;
+	}
+	#page20 p{
+		float: left;
+	}
+	#footer1{
+		float: right;
+	}
+	.footerIcon{
+		width: 11% !important;
+		height: 60% !important;
+	}
+	#page20{
+		height: 100px !important;
+	}
 }
