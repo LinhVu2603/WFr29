@@ -1,0 +1,6 @@
+01	Cherry	MandleKing	kg	190000	250000	297
+03	Táo NewZeaLand	MandleKing	kg	100000	150000	399
+04	Cam 	LiMaFruits	kg	100000	200000	398
+05	Xoài	LiMaFruits	kg	50000	80000	500
+06	Bưởi	LiMaFruits	quả	20000	50000	500
+02	Á	Á	SAD	CS	D	A
